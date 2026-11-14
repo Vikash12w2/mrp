@@ -1,0 +1,5 @@
+[console_scripts]
+mrp_planner = mrp_ros2.planner_node:main
+plan_executor = mrp_ros2.executor:main
+setup_controller = mrp_ros2.setup_controller:main
+visualizer = mrp_ros2.visualizer:main

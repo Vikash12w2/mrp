@@ -1,0 +1,18 @@
+[solver pid=19676 workers=3 rechargers=1] phase 1 started; T=8; mode=two_shot
+[solver pid=19676 workers=3 rechargers=1] phase 1 finished in 9.5s
+[solver pid=19676 workers=3 rechargers=1] phase 2 started; T'=10; cost optimization=False
+[solver pid=19676 workers=3 rechargers=1] phase 2 infeasible at T'=10 for the selected phase-1 schedule
+[solver pid=19676 workers=3 rechargers=1] phase 2 started; T'=11; cost optimization=False
+[solver pid=19676 workers=3 rechargers=1] phase 2 infeasible at T'=11 for the selected phase-1 schedule
+[solver pid=19676 workers=3 rechargers=1] phase 2 started; T'=12; cost optimization=False
+[solver pid=19676 workers=3 rechargers=1] phase 2 infeasible at T'=12 for the selected phase-1 schedule
+[solver pid=19676 workers=3 rechargers=1] phase 2 started; T'=13; cost optimization=False
+[solver pid=19676 workers=3 rechargers=1] phase 2 infeasible at T'=13 for the selected phase-1 schedule
+[solver pid=19676 workers=3 rechargers=1] phase 2 started; T'=14; cost optimization=False
+[solver pid=19676 workers=3 rechargers=1] phase 2 infeasible at T'=14 for the selected phase-1 schedule
+[solver pid=19676 workers=3 rechargers=1] phase 2 started; T'=15; cost optimization=False
+[solver pid=19676 workers=3 rechargers=1] phase 2 feasible at T'=15
+[solver pid=9364 workers=2 rechargers=1] phase 1 started; T=8; mode=two_shot
+[solver pid=9364 workers=2 rechargers=1] phase 1 finished in 14.7s
+[solver pid=9364 workers=2 rechargers=1] phase 2 started; T'=15; cost optimization=False
+[solver pid=9364 workers=2 rechargers=1] phase 2 feasible at T'=15

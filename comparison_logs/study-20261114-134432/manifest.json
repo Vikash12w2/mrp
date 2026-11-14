@@ -1,0 +1,3882 @@
+[
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 1
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 2
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 3
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 4
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 5
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 6
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 7
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 8
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 9
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 10
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 11
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 12
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 13
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 14
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 15
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 16
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 17
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 18
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 19
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 20
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 21
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 22
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 23
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 24
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 25
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 26
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 27
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 28
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 29
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 30
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 31
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 32
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 33
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 34
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 35
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 36
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 37
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 38
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 39
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 40
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 41
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 42
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 43
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 44
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 45
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 46
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 47
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 48
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 49
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 50
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 51
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 52
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 53
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 54
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 55
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 56
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 57
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 58
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 59
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 60
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 61
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 62
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "base",
+    "options": {},
+    "seed": 0,
+    "id": 63
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "collisions_off",
+    "options": {
+      "collisions": false
+    },
+    "seed": 0,
+    "id": 64
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 65
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 66
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 67
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 68
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 69
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 70
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 71
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 72
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 73
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 74
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 75
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 76
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 77
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 78
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 79
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "refine2",
+    "options": {
+      "K_refine": 2
+    },
+    "seed": 0,
+    "id": 80
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 81
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 82
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 83
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 84
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 85
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 86
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 87
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 88
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 89
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 90
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 91
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 92
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 93
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 94
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 95
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "refine5",
+    "options": {
+      "K_refine": 5
+    },
+    "seed": 0,
+    "id": 96
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 97
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 98
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 99
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 100
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 101
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 102
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 103
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 104
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 105
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 106
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 107
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 108
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 109
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 110
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 111
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "radius8",
+    "options": {
+      "R_s": 8
+    },
+    "seed": 0,
+    "id": 112
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 113
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 114
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 115
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 116
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 117
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 118
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 119
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 120
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 121
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 122
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 123
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 124
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 125
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 126
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 127
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cap2",
+    "options": {
+      "cap_n": 2
+    },
+    "seed": 0,
+    "id": 128
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 129
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 130
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 131
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 132
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 133
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 134
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 135
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 136
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 137
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 138
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 139
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 140
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 141
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 142
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 143
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cap6",
+    "options": {
+      "cap_n": 6
+    },
+    "seed": 0,
+    "id": 144
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 145
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 146
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 147
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 148
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 149
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 150
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 151
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 152
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 153
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 154
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 155
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 156
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 157
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 158
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 159
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "util2",
+    "options": {
+      "cap_util": 2.0
+    },
+    "seed": 0,
+    "id": 160
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 161
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 162
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 163
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 164
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 165
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 166
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 167
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 168
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 169
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 170
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 171
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 172
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 173
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 174
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 175
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "no_rebalance",
+    "options": {
+      "K_unclaimed": 0
+    },
+    "seed": 0,
+    "id": 176
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 177
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 178
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 179
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 180
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 181
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 182
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 183
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 184
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 185
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 186
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 187
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 188
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 189
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 190
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 191
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "no_swaps",
+    "options": {
+      "K_swap": 0
+    },
+    "seed": 0,
+    "id": 192
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 193
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 194
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 195
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 196
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 197
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 198
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 199
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 200
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 201
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 202
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 203
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 14,
+    "tiles": 1,
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 204
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 14,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 205
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 14,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 206
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 14,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 207
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 14,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "T14",
+    "options": {},
+    "seed": 0,
+    "id": 208
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 209
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 210
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 211
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 212
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 213
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 214
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 215
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 216
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 217
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 218
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 219
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 220
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 221
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 222
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 223
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 224
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 225
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 226
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 227
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 228
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 229
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 230
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 231
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 232
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 233
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 234
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 235
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 236
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 237
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 238
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 239
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 240
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 241
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 242
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 243
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 244
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 245
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 246
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 247
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 248
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 249
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 250
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 251
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 252
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 253
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 254
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 255
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 256
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 257
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 258
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 259
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 260
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 261
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 262
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 263
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 264
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 265
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 266
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 267
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 19,
+    "geometry": "source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 268
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 269
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost_off_small",
+    "options": {},
+    "seed": 0,
+    "id": 270
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "decentralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 271
+  },
+  {
+    "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-30",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "tiles": 1,
+    "grid_side": 25,
+    "geometry": "padded_source",
+    "approach": "centralized",
+    "variant": "cost",
+    "options": {
+      "phase2_optimize_cost": true
+    },
+    "seed": 0,
+    "id": 272
+  }
+]

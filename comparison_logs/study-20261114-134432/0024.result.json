@@ -1,0 +1,60 @@
+{
+  "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+  "workers": 3,
+  "rechargers": 2,
+  "T": 8,
+  "tiles": 1,
+  "grid_side": 25,
+  "geometry": "padded_source",
+  "approach": "centralized",
+  "variant": "collisions_off",
+  "options": {
+    "collisions": false
+  },
+  "seed": 0,
+  "id": 24,
+  "grid": "25x25",
+  "collisions_enabled": false,
+  "status": "SAT",
+  "coverage": 100,
+  "hard_eff": 35.416666666666664,
+  "soft_eff": 43.75,
+  "primitive_cost": 92.0,
+  "conflicts": 2,
+  "horizons": [
+    16
+  ],
+  "note": "",
+  "deployment": "NOT_MODELED_BY_BASELINE",
+  "same_group_conflicts": 2,
+  "cross_group_conflicts": 0,
+  "conflict_examples": [
+    [
+      6,
+      [
+        "W",
+        2
+      ],
+      [
+        "R",
+        0,
+        1
+      ],
+      "same_group"
+    ],
+    [
+      7,
+      [
+        "W",
+        2
+      ],
+      [
+        "R",
+        0,
+        1
+      ],
+      "same_group"
+    ]
+  ],
+  "wall_s": 65.54736660000003
+}

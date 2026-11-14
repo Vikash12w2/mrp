@@ -1,0 +1,8 @@
+[solver pid=19108 workers=1 rechargers=1] phase 1 started; T=8; mode=two_shot
+[solver pid=19108 workers=1 rechargers=1] phase 1 finished in 1.4s
+[solver pid=19108 workers=1 rechargers=1] phase 2 started; T'=8; cost optimization=False
+[solver pid=19108 workers=1 rechargers=1] phase 2 feasible at T'=8
+[solver pid=1564 workers=2 rechargers=1] phase 1 started; T=8; mode=two_shot
+[solver pid=1564 workers=2 rechargers=1] phase 1 finished in 2.8s
+[solver pid=1564 workers=2 rechargers=1] phase 2 started; T'=8; cost optimization=False
+[solver pid=1564 workers=2 rechargers=1] phase 2 feasible at T'=8

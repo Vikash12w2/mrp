@@ -1,0 +1,1 @@
+{"input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-random-20", "workers": 3, "rechargers": 2, "T": 8, "tiles": 1, "approach": "centralized", "variant": "collisions_off", "options": {"collisions": false}, "seed": 0, "id": 12}

@@ -1,0 +1,44 @@
+ID: 1
+pos_f: [0, 0]
+cost: 0
+swath: [[0, 0]]
+
+ID: 2
+pos_f: [1, 0]
+cost: 1
+swath: [[0, 0], [1, 0]]
+
+ID: 3
+pos_f: [1, 1]
+cost: 1
+swath: [[0, 0], [1, 1]]
+
+ID: 4
+pos_f: [0, 1]
+cost: 1
+swath: [[0, 0], [0, 1]]
+
+ID: 5
+pos_f: [-1, 1]
+cost: 1
+swath: [[0, 0], [-1, 1]]
+
+ID: 6
+pos_f: [-1, 0]
+cost: 1
+swath: [[0, 0], [-1, 0]]
+
+ID: 7
+pos_f: [-1, -1]
+cost: 1
+swath: [[0, 0], [-1, -1]]
+
+ID: 8
+pos_f: [0, -1]
+cost: 1
+swath: [[0, 0], [0, -1]]
+
+ID: 9
+pos_f: [1, -1]
+cost: 1
+swath: [[0, 0], [1, -1]]

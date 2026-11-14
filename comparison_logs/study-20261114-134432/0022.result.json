@@ -1,0 +1,93 @@
+{
+  "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-warehouse",
+  "workers": 3,
+  "rechargers": 2,
+  "T": 8,
+  "tiles": 1,
+  "grid_side": 25,
+  "geometry": "padded_source",
+  "approach": "decentralized",
+  "variant": "collisions_off",
+  "options": {
+    "collisions": false
+  },
+  "seed": 0,
+  "id": 22,
+  "grid": "25x25",
+  "collisions_enabled": false,
+  "status": "SAT",
+  "coverage": 100.0,
+  "hard_eff": 33.333333333333336,
+  "soft_eff": 39.39393939393939,
+  "primitive_cost": 53.0,
+  "conflicts": 1,
+  "horizons": [
+    11,
+    11
+  ],
+  "deployment": "READY",
+  "groups": {
+    "1": [
+      1
+    ],
+    "2": [
+      2,
+      3
+    ]
+  },
+  "anchors": {
+    "1": [
+      7,
+      2
+    ],
+    "2": [
+      14,
+      6
+    ]
+  },
+  "unclaimed": {},
+  "messages": {
+    "beacon": 2,
+    "worker_broadcast": 4,
+    "candidates": 2,
+    "ack": 125,
+    "group_state": 100,
+    "group_bid": 20,
+    "plan": 1,
+    "ready": 2,
+    "setup_path": 4,
+    "setup_ready": 4,
+    "setup_position": 10
+  },
+  "fallback_groups": [],
+  "refinements": 0,
+  "solver_outcomes": {
+    "1": {
+      "status": "SAT",
+      "note": ""
+    },
+    "2": {
+      "status": "SAT",
+      "note": ""
+    }
+  },
+  "same_group_conflicts": 1,
+  "cross_group_conflicts": 0,
+  "conflict_examples": [
+    [
+      2,
+      [
+        "W",
+        2
+      ],
+      [
+        "R",
+        2,
+        1
+      ],
+      "same_group"
+    ]
+  ],
+  "candidate_valid": false,
+  "wall_s": 24.05586879999987
+}

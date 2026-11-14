@@ -1,0 +1,4 @@
+from setuptools import setup
+from glob import glob
+import os
+setup(name='mrp_ros2',version='0.1.0',packages=['mrp_ros2'],data_files=[('share/ament_index/resource_index/packages',['resource/mrp_ros2']),('share/mrp_ros2',['package.xml']), (os.path.join('share','mrp_ros2','launch'),glob('launch/*.launch.py')), (os.path.join('share','mrp_ros2','config'),glob('config/*.yaml')), (os.path.join('share','mrp_ros2','config','sample_input'),glob('config/sample_input/*')), (os.path.join('share','mrp_ros2','rviz'),glob('rviz/*.rviz'))]+[(os.path.join('share','mrp_ros2',folder),[os.path.join(folder,f) for f in files]) for folder,_,files in os.walk('config/scenarios')],install_requires=['setuptools'],zip_safe=True,entry_points={'console_scripts':['setup_controller=mrp_ros2.setup_controller:main','visualizer=mrp_ros2.visualizer:main','mrp_planner=mrp_ros2.planner_node:main','plan_executor=mrp_ros2.executor:main']})

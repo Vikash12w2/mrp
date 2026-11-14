@@ -1,0 +1,14 @@
+{
+  "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+  "workers": 6,
+  "rechargers": 2,
+  "T": 8,
+  "tiles": 1,
+  "approach": "centralized",
+  "variant": "base",
+  "options": {},
+  "seed": 0,
+  "id": 27,
+  "status": "INTERRUPTED",
+  "wall_s": 5051.3469372
+}

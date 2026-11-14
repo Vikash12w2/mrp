@@ -1,0 +1,63 @@
+running develop
+running egg_info
+writing mrp_ros2.egg-info/PKG-INFO
+writing dependency_links to mrp_ros2.egg-info/dependency_links.txt
+writing entry points to mrp_ros2.egg-info/entry_points.txt
+writing requirements to mrp_ros2.egg-info/requires.txt
+writing top-level names to mrp_ros2.egg-info/top_level.txt
+reading manifest file 'mrp_ros2.egg-info/SOURCES.txt'
+writing manifest file 'mrp_ros2.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/python3.12/site-packages/mrp-ros2.egg-link (link to .)
+Installing mrp_planner script to /home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/mrp_ros2
+Installing plan_executor script to /home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/mrp_ros2
+Installing setup_controller script to /home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/mrp_ros2
+Installing visualizer script to /home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/mrp_ros2
+
+Installed /home/vikash-bhati/Downloads/paper/build/mrp_ros2
+running symlink_data
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/launch/mrp_recovery_demo.launch.py -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/launch
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/launch/mrp_8w4r.launch.py -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/launch
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/launch/mrp_scenarios.launch.py -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/launch
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/launch/mrp_4w2r.launch.py -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/launch
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/launch/mrp_6w3r.launch.py -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/launch
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/sample_input/rob2_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/sample_input
+creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/scenarios.json -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios
+creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/four_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/four_workers/rob4_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/four_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/four_workers/workspace.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/four_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/four_workers/2d_template.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/four_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/four_workers/rob1_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/four_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/four_workers/rob3_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/four_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/four_workers/obstacle.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/four_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/four_workers/rob2_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/four_workers
+creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/recovery
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/recovery/workspace.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/recovery
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/recovery/2d_template.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/recovery
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/recovery/rob1_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/recovery
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/recovery/rob3_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/recovery
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/recovery/obstacle.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/recovery
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/recovery/rob2_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/recovery
+creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/rob7_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/rob4_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/rob6_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/workspace.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/rob5_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/rob8_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/2d_template.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/rob1_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/rob3_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/obstacle.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/eight_workers/rob2_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/eight_workers
+creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/six_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/six_workers/rob4_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/six_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/six_workers/rob6_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/six_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/six_workers/workspace.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/six_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/six_workers/rob5_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/six_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/six_workers/2d_template.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/six_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/six_workers/rob1_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/six_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/six_workers/rob3_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/six_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/six_workers/obstacle.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/six_workers
+symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/six_workers/rob2_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/scenarios/six_workers

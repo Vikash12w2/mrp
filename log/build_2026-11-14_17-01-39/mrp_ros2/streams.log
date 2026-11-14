@@ -1,0 +1,39 @@
+[0.451s] Invoking command in '/home/vikash-bhati/Downloads/paper/build/mrp_ros2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vikash-bhati/Downloads/paper/build/mrp_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vikash-bhati/Downloads/paper/build/mrp_ros2/build --no-deps symlink_data
+[0.638s] running develop
+[0.740s] running egg_info
+[0.740s] creating mrp_ros2.egg-info
+[0.750s] writing mrp_ros2.egg-info/PKG-INFO
+[0.750s] writing dependency_links to mrp_ros2.egg-info/dependency_links.txt
+[0.750s] writing entry points to mrp_ros2.egg-info/entry_points.txt
+[0.752s] writing requirements to mrp_ros2.egg-info/requires.txt
+[0.752s] writing top-level names to mrp_ros2.egg-info/top_level.txt
+[0.752s] writing manifest file 'mrp_ros2.egg-info/SOURCES.txt'
+[0.772s] reading manifest file 'mrp_ros2.egg-info/SOURCES.txt'
+[0.772s] writing manifest file 'mrp_ros2.egg-info/SOURCES.txt'
+[0.783s] running build_ext
+[0.783s] Creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/python3.12/site-packages/mrp-ros2.egg-link (link to .)
+[0.783s] Installing mrp_planner script to /home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/mrp_ros2
+[0.783s] Installing plan_executor script to /home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/mrp_ros2
+[0.783s] Installing setup_controller script to /home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/mrp_ros2
+[0.783s] Installing visualizer script to /home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/mrp_ros2
+[0.783s] 
+[0.783s] Installed /home/vikash-bhati/Downloads/paper/build/mrp_ros2
+[0.783s] running symlink_data
+[0.784s] creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/ament_index
+[0.784s] creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/ament_index/resource_index
+[0.784s] creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/ament_index/resource_index/packages
+[0.784s] symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/resource/mrp_ros2 -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/ament_index/resource_index/packages
+[0.784s] symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/package.xml -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2
+[0.784s] creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/launch
+[0.784s] symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/launch/mrp_full.launch.py -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/launch
+[0.784s] symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/launch/mrp_demo.launch.py -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/launch
+[0.784s] creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config
+[0.784s] symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/demo.yaml -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config
+[0.784s] creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/sample_input
+[0.784s] symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/sample_input/workspace.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/sample_input
+[0.784s] symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/sample_input/2d_template.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/sample_input
+[0.784s] symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/sample_input/rob1_traj.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/sample_input
+[0.784s] symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/sample_input/obstacle.txt -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/config/sample_input
+[0.784s] creating /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/rviz
+[0.784s] symbolically linking /home/vikash-bhati/Downloads/paper/build/mrp_ros2/rviz/mrp.rviz -> /home/vikash-bhati/Downloads/paper/install/mrp_ros2/share/mrp_ros2/rviz
+[0.803s] Invoked command in '/home/vikash-bhati/Downloads/paper/build/mrp_ros2' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vikash-bhati/Downloads/paper/build/mrp_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vikash-bhati/Downloads/paper/install/mrp_ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vikash-bhati/Downloads/paper/build/mrp_ros2/build --no-deps symlink_data

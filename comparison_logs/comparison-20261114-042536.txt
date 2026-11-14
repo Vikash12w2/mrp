@@ -1,0 +1,55 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261114042537
+Username: VIKASHASUS\vikas
+RunAs User: VIKASHASUS\vikas
+Configuration Name: 
+Machine: VIKASHASUS (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -File C:\Users\vikas\Downloads\mrp_version_a\mrp\run_comparisons.ps1
+Process ID: 29708
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Live comparisons: 4 cases. Solver calls may take several minutes without intermediate output.
+Log: C:\Users\vikas\Downloads\mrp_version_a\mrp\comparison_logs\comparison-20261114-042536.txt
+Dataset: warehouse; T=8; R_s=6; collision constraints enabled; legacy waypoint model.
+Wall times include the displayed pipeline stages; treat this as an initial comparison suite.
+
+[1/4] Small centralized vs decentralized -- 04:25:37
+instance input-warehouse: 1 workers, 1 rechargers, T=8, R_s=6
+anchors: {1: (7, 2)} | groups: {1: [1]} | unclaimed: none
+planning order: [(0, 1)] | fallback groups: []
+                         status  served  coverage     T_prime   hard%   soft%   wall s same-grp cross-grp
+centralized                 SAT     all     100.0          14    35.7    42.9     13.6        0         0
+decentralized               SAT     all     100.0        [10]    50.0    60.0      7.2        0         0
+Wall time includes each pipeline; decentralized includes grouping, refinement and setup simulation.
+decentralized final-plan critical-path estimate (excludes rejected refinement trials): 7.2s
+deployment: READY | setup steps: 4 | component start ticks: {1: 4}
+  setup 1: [(7, 2), (7, 1), (4, 1), (1, 1)]
+reported setup positions: {1: (1, 1)}
+messages: {'worker_broadcast': 1} | refinements accepted: 0
+  recharger 1 anchor (7, 2) workers [1] T=8 T'=10 solve 7.2s
+
+[2/4] Three-worker centralized vs decentralized -- 04:25:58
+reported setup positions: {1: (1, 1), 2: (17, 8)}
+messages: {'beacon': 2, 'worker_broadcast': 4, 'candidates': 2, 'ack': 125, 'group_state': 100, 'group_bid': 20, 'plan':
+ 1, 'ready': 2, 'setup_path': 4, 'setup_ready': 4, 'setup_position': 8} | refinements accepted: 0
+  recharger 1 anchor (7, 2) workers [1] T=8 T'=10 solve 6.8s
+  recharger 2 anchor (14, 6) workers [2, 3] T=6 T'=10 solve 39.1s
+
+[3/4] Three-worker refinement variant (compare with previous baseline) -- 04:28:44
+
+
+[4/4] Three-worker Phase 2 cost variant (applied to both approaches) -- 04:29:30
+
+PS>TerminatingError(): "The pipeline has been stopped."
+**********************
+Windows PowerShell transcript end
+End time: 20261114061509
+**********************

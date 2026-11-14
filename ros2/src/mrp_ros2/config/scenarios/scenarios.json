@@ -1,0 +1,78 @@
+{
+  "four_workers": {
+    "anchors": {
+      "1": [
+        4,
+        4
+      ],
+      "2": [
+        14,
+        4
+      ]
+    },
+    "R_s": 4,
+    "cap_util": 4.0,
+    "workers": 4,
+    "rechargers": 2
+  },
+  "six_workers": {
+    "anchors": {
+      "1": [
+        4,
+        4
+      ],
+      "2": [
+        14,
+        4
+      ],
+      "3": [
+        9,
+        14
+      ]
+    },
+    "R_s": 4,
+    "cap_util": 4.0,
+    "workers": 6,
+    "rechargers": 3
+  },
+  "eight_workers": {
+    "anchors": {
+      "1": [
+        4,
+        4
+      ],
+      "2": [
+        14,
+        4
+      ],
+      "3": [
+        4,
+        14
+      ],
+      "4": [
+        14,
+        14
+      ]
+    },
+    "R_s": 4,
+    "cap_util": 4.0,
+    "workers": 8,
+    "rechargers": 4
+  },
+  "recovery": {
+    "anchors": {
+      "1": [
+        5,
+        9
+      ],
+      "2": [
+        13,
+        9
+      ]
+    },
+    "R_s": 6,
+    "cap_util": 4.0,
+    "workers": 3,
+    "rechargers": 2
+  }
+}

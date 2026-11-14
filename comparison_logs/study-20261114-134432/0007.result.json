@@ -1,0 +1,31 @@
+{
+  "input": "C:\\Users\\vikas\\Downloads\\MobileRobotRecharging-main\\MobileRobotRecharging-main\\mobile-recharger-path-planning-scheduling\\approach_two-shot\\examples\\input-artfloor",
+  "workers": 3,
+  "rechargers": 2,
+  "T": 8,
+  "tiles": 1,
+  "grid_side": 25,
+  "geometry": "padded_source",
+  "approach": "centralized",
+  "variant": "base",
+  "options": {},
+  "seed": 0,
+  "id": 7,
+  "grid": "25x25",
+  "collisions_enabled": true,
+  "status": "SAT",
+  "coverage": 100,
+  "hard_eff": 56.666666666666664,
+  "soft_eff": 66.66666666666667,
+  "primitive_cost": 39.0,
+  "conflicts": 0,
+  "horizons": [
+    10
+  ],
+  "note": "",
+  "deployment": "NOT_MODELED_BY_BASELINE",
+  "same_group_conflicts": 0,
+  "cross_group_conflicts": 0,
+  "conflict_examples": [],
+  "wall_s": 115.83705759999998
+}

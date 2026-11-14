@@ -1,0 +1,8 @@
+mrp_visualizer:
+  ros__parameters:
+    xmax: 16
+    ymax: 12
+    cell_size: 1.0
+    robot_ids: [1, 2]
+    worker_positions: "3,3;12,8;8,5"
+    obstacles: "6,3;6,4;6,5;10,7;10,8"
