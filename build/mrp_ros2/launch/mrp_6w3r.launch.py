@@ -1,1 +1,0 @@
-/home/vikash-bhati/Downloads/paper/ros2/src/mrp_ros2/launch/mrp_6w3r.launch.py

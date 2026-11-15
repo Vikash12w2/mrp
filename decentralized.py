@@ -50,7 +50,7 @@ class DResult:
                     unclaimed=self.grouping.unclaimed)
 
 
-def run_decentralized(inst: Instance, anchors: dict, P: Params, parallel=False, loss=None, setup_controller=None) -> DResult:
+def run_decentralized(inst: Instance, anchors: dict, P: Params, parallel=True, loss=None, setup_controller=None) -> DResult:
     bus = Bus(anchors, P.R_c, P.retries, loss)
     g = run_grouping(inst, anchors, P, bus)
     groups = {r: set(w) for r, w in g.groups.items()}

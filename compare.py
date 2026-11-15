@@ -27,7 +27,11 @@ def main():
     ap.add_argument("--T", type=int)
     ap.add_argument("--Rs", type=int)
     ap.add_argument("--skip-central", action="store_true")
-    ap.add_argument("--parallel", action="store_true")
+    mode = ap.add_mutually_exclusive_group()
+    mode.add_argument("--parallel", dest="parallel", action="store_true", default=True,
+                      help="plan independent groups concurrently (default); preserve collision dependencies")
+    mode.add_argument("--sequential", dest="parallel", action="store_false",
+                      help="plan independent groups sequentially")
     ap.add_argument("--anchors", help="physical setup positions and region centers, e.g. \"9,6;9,12\"")
     ap.add_argument("--group-mode", choices=["two_shot", "one_shot", "auto"], default="two_shot")
     ap.add_argument("--one-shot-H", type=int, default=0, help="hypercycle for one-shot groups that are not aligned")

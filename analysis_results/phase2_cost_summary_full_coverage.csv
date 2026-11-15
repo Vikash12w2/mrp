@@ -1,0 +1,3 @@
+approach,full_pairs,same_horizon,cost_improved,median_time_ratio,mean_cost_reduction_pct,mean_hard_delta_pp
+centralized,8,8,5,1.7031431427752235,6.699100692908742,0.0
+decentralized,7,7,7,1.5046703242181478,36.124583166599976,0.0

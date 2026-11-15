@@ -11,6 +11,7 @@ from geometry_msgs.msg import Pose2D
 from visualization_msgs.msg import Marker, MarkerArray
 from std_msgs.msg import ColorRGBA
 from std_msgs.msg import String
+from std_msgs.msg import Float32
 
 class MRPVisualizer(Node):
     def __init__(self):
@@ -49,6 +50,9 @@ class MRPVisualizer(Node):
         self.staged={}
         self.failed_actors={}
         self.failure_queue=set()
+        self.battery={}
+        self.battery_specs={}
+        self.battery_pubs={}
         self.health=self.create_publisher(String,'/mrp/simulation/heartbeat',10)
         self.create_subscription(String,'/mrp/simulation/fail',self._failure,10)
         self.feedback=self.create_publisher(String,'/mrp/execution/feedback',10)
@@ -159,6 +163,11 @@ class MRPVisualizer(Node):
         for wid in self.worker_positions:
             if wid not in self.worker_pos_pubs:
                 self.worker_pos_pubs[wid]=self.create_publisher(Pose2D,f'/mrp/workers/worker_{wid}/position',10)
+        self.battery_specs={int(k):v for k,v in data.get('battery',{}).items()}
+        self.battery={wid:float(spec['capacity']) for wid,spec in self.battery_specs.items()}
+        for wid in self.battery:
+            if wid not in self.battery_pubs:
+                self.battery_pubs[wid]=self.create_publisher(Float32,f'/mrp/workers/worker_{wid}/battery',10)
         self.schedule=schedule
         self.execution_tick=-1
         self.motion=None
@@ -176,8 +185,10 @@ class MRPVisualizer(Node):
             fraction=(time.monotonic()-move['began'])/move['duration']
             self._set_positions(interpolate(move['start'],move['end'],fraction))
             if fraction>=1.0:
+                old_tick=self.execution_tick
                 self.execution_tick=move['tick']
                 self.motion=None
+                self._update_batteries(old_tick,move)
                 kind=self.get_parameter('failure_kind').value
                 cycles=max(1,int(self.get_parameter('failure_after_cycles').value))
                 period=math.lcm(*(len(t['path'])-1 for t in self.schedule.tracks.values()))
@@ -200,6 +211,8 @@ class MRPVisualizer(Node):
             for wid,(wx,wy) in self.worker_positions.items():
                 if f'w{wid}' in self.failed_actors:continue
                 p=Pose2D();p.x=float(wx);p.y=float(wy);self.worker_pos_pubs[wid].publish(p)
+        for wid,charge in self.battery.items():
+            msg=Float32();msg.data=float(charge);self.battery_pubs[wid].publish(msg)
         for rid in self.ids:
             t=self.targets[rid]
             if t:
@@ -236,6 +249,14 @@ class MRPVisualizer(Node):
         a.markers.append(lines)
         for i,o in enumerate(self.obstacles): a.markers.append(marker('obstacle',i,Marker.CUBE,(float(o[0])*self.size,float(o[1])*self.size,.05),(.9*self.size,.9*self.size,.2),(.2,.2,.25,1.)))
         for i,w in enumerate(self.workers): a.markers.append(marker('worker',i,Marker.CYLINDER,(float(w[0])*self.size,float(w[1])*self.size,.45),(.48*self.size,.48*self.size,.75),(.15,.75,.25,1.)))
+        for wid,cell in self.worker_positions.items():
+            if f'w{wid}' in self.failed_actors or wid not in self.battery_specs:continue
+            capacity=float(self.battery_specs[wid]['capacity'])
+            percent=100.*self.battery[wid]/capacity if capacity else 0.
+            color=(1.,.12,.08,1.) if percent<=20 else (.95,.72,.1,1.)
+            label=marker('worker_battery',wid,Marker.TEXT_VIEW_FACING,
+                (cell[0]*self.size,cell[1]*self.size,1.05),(0.,0.,.2),color)
+            label.text=f'Worker {wid}: {percent:.0f}%';a.markers.append(label)
         colors=[(.1,.45,.95,1.),(.95,.25,.12,1.),(.7,.2,.85,1.),(.95,.65,.1,1.)]
         for j,rid in enumerate(self.ids):
             if f'r{rid}' in self.failed_actors:continue
@@ -260,6 +281,28 @@ class MRPVisualizer(Node):
             label=marker('failed_label',i,Marker.TEXT_VIEW_FACING,(x*self.size,y*self.size,1.),(0.,0.,.25),(1.,.2,.2,1.))
             label.text=f'{key} FAILED';a.markers.append(label)
         self.pub.publish(a)
+
+    def _update_batteries(self,old_tick,move):
+        if old_tick<0:return
+        end=move['end']
+        for wid,spec in self.battery_specs.items():
+            key=f'w{wid}'
+            if key not in end or key in self.failed_actors:continue
+            period=int(spec['period'])
+            t=((old_tick-self.schedule.setup_steps)%period)+1
+            drain=int(spec['drains'][t]) if t<len(spec['drains']) else 0
+            charge=self.battery[wid]-drain
+            assigned=spec.get('charges',{}).get(str(t))
+            worker_cell=end[key]
+            available=[]
+            for robot_key,robot_cell in end.items():
+                if robot_key.startswith('r') and max(abs(worker_cell[0]-robot_cell[0]),abs(worker_cell[1]-robot_cell[1]))==1:
+                    available.append(int(robot_key[1:]))
+            if assigned is not None and (assigned==0 or assigned in available):
+                charge=min(float(spec['capacity']),charge+int(spec['delta_max']))
+            self.battery[wid]=max(0.,charge)
+            if self.battery[wid]<=0 and not available:
+                self.failure_queue.add(key)
 def main(args=None):
     rclpy.init(args=args); n=MRPVisualizer()
     try:rclpy.spin(n)

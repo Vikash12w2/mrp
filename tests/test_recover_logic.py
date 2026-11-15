@@ -37,7 +37,7 @@ def main():
     dC, repC = recover(d, [Failure("recharger", 2, 9)])
     assert repC[0].unserved == [2, 3] and set(repC[0].resolved) <= {1} and 2 not in dC.anchors and dC.plans[1].live
     # B: recharger failure with overlapping regions -> orphans reassigned to the survivor (capacity permitting)
-    big = run_decentralized(inst, {1: (9, 6), 2: (9, 12)}, Params(R_s=12, cap_util=10, cap_n=4))   # both regions cover every loop
+    big = run_decentralized(inst, {1: (9, 6), 2: (9, 12)}, Params(R_s=12, cap_n=4))   # both regions cover every loop
     dB, repB = recover(big, [Failure("recharger", 2, 9)])
     assert set(repB[0].reassigned) | set(repB[0].unserved) == set(big.grouping.groups[2])
     assert all(r == 1 for r in repB[0].reassigned.values()) and len(repB[0].reassigned) == len(big.grouping.groups[2]) > 0

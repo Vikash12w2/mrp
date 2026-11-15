@@ -31,13 +31,15 @@ class LocalExtensionTests(unittest.TestCase):
     def refinement_actors(self, loss=None):
         inst = instance([worker(1, (2, 1)), worker(2, (3, 1))])
         anchors = {1: (1, 0), 2: (4, 0)}
-        P = Params(R_s=5, cap_util=10, cap_n=2, K_refine=1)
+        P = Params(R_s=5, cap_n=2, K_refine=1)
         bus = Bus(anchors, P.R_c, loss=loss)
         actors = []
         for rid, anchor in anchors.items():
             a = Agent(rid, anchor, inst, P)
             for w in inst.workers:
                 a.hear(w)
+            # Equal workload isolates the efficiency/transaction tests from balancing.
+            a.util = {w: 0.1 for w in a.cand}
             a.neighbors = [n for n in anchors if n != rid]
             actors.append(Refiner(a, plan(rid, {rid}, anchor, wait=3), bus))
         return actors, bus
@@ -54,8 +56,8 @@ class LocalExtensionTests(unittest.TestCase):
         with patch("mrp.planner._plan_for", side_effect=solve_local):
             refine(actors, bus, 1)
         self.assertEqual([s[0] for s in solved], [1, 2])
-        self.assertEqual([a.members for a in actors], [set(), {1, 2}])
-        self.assertEqual(solved[1][2][1].workers, [])
+        self.assertEqual([a.members for a in actors], [{2}, {1}])
+        self.assertEqual(solved[1][2][1].workers, [2])
         self.assertEqual(sum(a.accepted for a in actors), 1)
 
     def test_refinement_dropped_messages_leave_both_original_plans(self):

@@ -1,0 +1,13 @@
+id,dataset,grid,workers,rechargers,approach,variant,wall_s
+31,input-artfloor,19x19,6,3,centralized,base,12664.757011421
+55,input-warehouse,19x19,6,2,centralized,base,11735.495000993
+59,input-warehouse,19x19,6,3,centralized,base,9621.516109666
+27,input-artfloor,19x19,6,2,centralized,base,7602.051454067
+56,input-warehouse,19x19,6,2,centralized,collisions_off,6787.123662362999
+60,input-warehouse,19x19,6,3,centralized,collisions_off,6356.701718553
+32,input-artfloor,19x19,6,3,centralized,collisions_off,5890.657618597001
+28,input-artfloor,19x19,6,2,centralized,collisions_off,4471.538771181002
+204,input-random-30,19x19,6,3,decentralized,T14,3345.7508779169993
+199,input-random-20,19x19,3,2,decentralized,T14,2901.569373288001
+201,input-random-20,19x19,6,3,decentralized,T14,2390.4517864
+202,input-random-30,19x19,3,2,decentralized,T14,1963.933125493

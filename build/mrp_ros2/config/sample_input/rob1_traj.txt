@@ -1,1 +1,0 @@
-/home/vikash-bhati/Downloads/paper/ros2/src/mrp_ros2/config/sample_input/rob1_traj.txt

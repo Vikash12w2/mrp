@@ -1,1 +1,0 @@
-/home/vikash-bhati/Downloads/paper/build/mrp_ros2/config/scenarios/four_workers/rob2_traj.txt

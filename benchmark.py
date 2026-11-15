@@ -110,7 +110,7 @@ def matrix(root, repeats):
             scenarios.append(dict(input=str(root / name), workers=workers, rechargers=rechargers, T=8, tiles=1))
     variants = [("base", {}), ("refine2", {"K_refine": 2}), ("refine5", {"K_refine": 5}),
                 ("radius8", {"R_s": 8}), ("cap2", {"cap_n": 2}), ("cap6", {"cap_n": 6}),
-                ("util2", {"cap_util": 2.0}), ("no_rebalance", {"K_unclaimed": 0}),
+                ("no_rebalance", {"K_unclaimed": 0}),
                 ("no_swaps", {"K_swap": 0})]
     scenarios += [dict(input=str(root / name), workers=w, rechargers=r,
                        T=8, tiles=1, grid_side=25, geometry="padded_source")

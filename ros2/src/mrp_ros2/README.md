@@ -50,6 +50,8 @@ Both workers and rechargers interpolate smoothly between consecutive scheduled w
 * **Green cylinders:** workers; colored blocks: rechargers.
 * **Dark red blocks/labels:** failed actors, retained as obstacles.
 
+Workers also have a simulated battery initialized from `fch` in their input files. Movement uses the worker's configured per-step energy cost; a scheduled charge event restores charge only when its recharger is actually adjacent. Battery percentage is shown above each worker and published on `/mrp/workers/worker_<id>/battery` (`std_msgs/msg/Float32`). If charge reaches zero away from a recharger, that worker stops at the completed waypoint, is marked failed, and remains an obstacle. Version A recovery excludes that worker from future plans; it does not restart or recharge the failed worker.
+
 The launch loads RViz settings. For manual setup, set **Fixed Frame** to `map`, add **MarkerArray**, and choose `/mrp/visualization`. The floor/grid covers the complete map, and the camera is configured for the 19 × 19 scenarios.
 
 This remains a simulation of the source grid model, not a hardware controller. Straight interpolation is checked for obstacle proximity and simultaneous crossings involving a recharger. A custom abstract waypoint jump that cannot be drawn safely is rejected rather than animated through an obstacle. Curved motion primitives would need their actual geometry; endpoint-only trajectories do not define a curve.
@@ -95,6 +97,7 @@ If the failed cell blocks the old route before its boundary, no feasible recover
 | `/mrp/simulation/heartbeat` | `std_msgs/msg/String` | Live actor IDs and current session |
 | `/mrp/robots/robot_<id>/position` | `geometry_msgs/msg/Pose2D` | Smooth recharger telemetry in grid coordinates |
 | `/mrp/workers/worker_<id>/position` | `geometry_msgs/msg/Pose2D` | Smooth worker telemetry in grid coordinates |
+| `/mrp/workers/worker_<id>/battery` | `std_msgs/msg/Float32` | Simulated remaining worker charge |
 | `/mrp/negotiation/robot_<id>/inbox` and `/ack` | `std_msgs/msg/String` | Typed negotiation JSON and matching ACKs |
 | `/mrp/visualization` | `visualization_msgs/msg/MarkerArray` | RViz scene and path lines |
 

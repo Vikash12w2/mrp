@@ -1,0 +1,27 @@
+# Python runtime and tool caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ROS 2 / colcon generated workspaces
+/build/
+/install/
+/log/
+/ros2/build/
+/ros2/install/
+/ros2/log/
+
+# Local experiment output and backup copies
+/mrp_backup/
+*.log
+*.result.json
+
+# Editor and OS files
+.DS_Store
+*.swp
+*~

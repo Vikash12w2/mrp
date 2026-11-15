@@ -1,0 +1,36 @@
+{
+  "completed": 194,
+  "result_files": 195,
+  "ignored": [],
+  "duplicate_files": [
+    "test_job.result.json"
+  ],
+  "csv_discrepancies": [],
+  "completed_by_grid": {
+    "19x19": 186,
+    "25x25": 8
+  },
+  "total_recorded_compute_hours": 23.793146102455836,
+  "strict_pairs": [
+    1,
+    9,
+    29,
+    41
+  ],
+  "base_group_size_counts": {
+    "2": 20,
+    "1": 6,
+    "3": 2
+  },
+  "unclaimed_reasons_all": {
+    "capacity": 11,
+    "loop_not_inside_any_region": 18,
+    "outside_all_regions": 58
+  },
+  "unclaimed_reasons_base": {
+    "capacity": 1,
+    "loop_not_inside_any_region": 1,
+    "outside_all_regions": 6
+  },
+  "max_verification_hyperperiod": 1680
+}

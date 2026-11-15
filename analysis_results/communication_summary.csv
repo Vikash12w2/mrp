@@ -1,0 +1,8 @@
+variant,runs,median_events,min_events,max_events
+base,12,275.5,270.0,837.0
+no_rebalance,12,155.5,150.0,477.0
+no_swaps,12,235.5,230.0,717.0
+radius8,12,277.5,270.0,831.0
+refine2,12,284.0,278.0,861.0
+refine5,12,296.0,290.0,897.0
+util2,12,274.5,270.0,837.0

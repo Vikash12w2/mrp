@@ -1,6 +1,0 @@
-[solver pid=8256 workers=3 rechargers=2] phase 1 started; T=8; mode=two_shot
-[solver pid=8256 workers=3 rechargers=2] phase 1 finished in 15.1s
-[solver pid=8256 workers=3 rechargers=2] phase 2 started; T'=8; cost optimization=False
-[solver pid=8256 workers=3 rechargers=2] phase 2 infeasible at T'=8 for the selected phase-1 schedule
-[solver pid=8256 workers=3 rechargers=2] phase 2 started; T'=9; cost optimization=False
-[solver pid=8256 workers=3 rechargers=2] phase 2 feasible at T'=9

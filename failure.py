@@ -3,7 +3,7 @@ from dataclasses import dataclass, field, replace
 from .bus import Bus
 from .decentralized import DResult
 from .grouping import Agent, GroupingResult, summarize_unclaimed
-from .negotiation import Negotiator, rounds
+from .negotiation import Negotiator, assign
 from .planner import GroupPlan, overlap_neighbors, run_wavefront
 from .runtime import verify
 from .twoshot import wrap
@@ -142,10 +142,7 @@ def recover(dres: DResult, failures: list, parallel: bool = False, loss=None) ->
         if f.kind == "recharger":
             # Every survivor independently notices locally sensed workers without
             # a surviving owner. No global orphan list or winner is consulted.
-            rounds(actors, bus, max(1, P.K_round), "claim")
-            for _ in range(max(0, P.K_unclaimed)):
-                rounds(actors, bus, 1, "rebalance")
-                rounds(actors, bus, 1, "claim")
+            assign(actors, bus, P)
         propagate_replans(actors, bus)
         groups = {a.rid: set(a.members) for a in actors}
         agents = {a.rid: a.agent for a in actors}

@@ -91,7 +91,7 @@ class Agent:
             ids.add(extra)
         if drop is not None:
             ids.discard(drop)
-        return len(ids) <= self.P.cap_n and sum(self.util[i] for i in ids) <= self.P.cap_util + 1e-12
+        return ids.issubset(self.cand) and (self.P.cap_n is None or len(ids) <= self.P.cap_n)
 
     def select_claims(self) -> dict:
         lost = {w for nb, cl in self.view.items() for w, s in cl.items()
@@ -113,15 +113,9 @@ class GroupingResult:
 
 
 def _local_grouping(agents, bus, P):
-    from .negotiation import Negotiator, rounds
+    from .negotiation import Negotiator, assign
     actors = [Negotiator(a, (), bus) for a in agents.values()]
-    rounds(actors, bus, max(1, P.K_round), "claim")
-    # Each cycle can free local capacity through one bilateral transfer, then
-    # offer that capacity in the next local auction. No global unclaimed list.
-    for _ in range(max(0, P.K_unclaimed)):
-        rounds(actors, bus, 1, "rebalance")
-        rounds(actors, bus, 1, "claim")
-    rounds(actors, bus, P.K_swap, "swap")
+    assign(actors, bus, P)
     # Output aggregation only: these dictionaries never select assignments.
     for actor in actors:
         actor.agent.claims = {w: actor.agent.cand[w] for w in actor.members}

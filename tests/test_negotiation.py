@@ -2,7 +2,7 @@ import unittest
 from types import SimpleNamespace
 
 from mrp.bus import Bus
-from mrp.negotiation import Negotiator, rounds
+from mrp.negotiation import Negotiator, assign, rounds
 from mrp.params import Params
 
 
@@ -25,6 +25,69 @@ class NegotiationTests(unittest.TestCase):
             self.assertTrue(a.fits(a.snapshot(), a.members))
             owned |= a.members
         return {a.rid: a.members for a in actors}
+
+    def test_isolated_recharger_claims_more_than_old_limits(self):
+        scores = {w: w for w in range(1, 32)}
+        actors, bus = self.actors({1: scores}, cap=None)
+        actors[0].agent.util = {w: 10.0 for w in scores}
+        assign(actors, bus, Params())
+        self.assertEqual(self.check(actors), {1: set(scores)})
+
+    def test_shared_workers_balance_even_when_one_recharger_is_closer(self):
+        scores = {w: 0 for w in range(1, 9)}
+        actors, bus = self.actors({1: scores, 2: {w: 100 for w in scores}}, cap=None)
+        assign(actors, bus, Params())
+        groups = self.check(actors)
+        self.assertEqual([len(groups[r]) for r in (1, 2)], [4, 4])
+        self.assertEqual(set.union(*groups.values()), set(scores))
+
+    def test_only_common_workers_transfer_from_overloaded_group(self):
+        actors, bus = self.actors({1: {w: 0 for w in range(1, 7)},
+                                  2: {5: 100, 6: 100, 7: 0}},
+                                 {1: set(range(1, 7)), 2: {7}}, cap=None)
+        rounds(actors, bus, 20, "swap")
+        self.assertEqual(self.check(actors), {1: {1, 2, 3, 4}, 2: {5, 6, 7}})
+
+    def test_no_overlap_does_not_drop_workers_to_equalize_counts(self):
+        actors, bus = self.actors({1: {w: 0 for w in range(1, 7)}, 2: {7: 0}}, cap=None)
+        assign(actors, bus, Params())
+        self.assertEqual(self.check(actors), {1: set(range(1, 7)), 2: {7}})
+
+    def test_equal_counts_exchange_heavy_and_light_workers(self):
+        scores = {w: 0 for w in range(1, 5)}
+        actors, bus = self.actors({1: scores, 2: scores}, {1: {1, 2}, 2: {3, 4}}, cap=None)
+        for actor in actors:
+            actor.agent.util = {1: 8, 2: 8, 3: 1, 4: 1}
+        rounds(actors, bus, 10, "swap")
+        self.check(actors)
+        self.assertEqual([sum(a.agent.util[w] for w in a.members) for a in actors], [9, 9])
+        before = [set(a.members) for a in actors]
+        rounds(actors, bus, 10, "swap")
+        self.assertEqual([a.members for a in actors], before)
+
+    def test_balancing_dropped_messages_preserve_ownership(self):
+        for kind in ("group_state", "group_offer", "group_vote", "group_commit"):
+            with self.subTest(kind=kind):
+                scores = {w: 0 for w in range(1, 5)}
+                actors, bus = self.actors({1: scores, 2: scores}, {1: set(scores)}, cap=None,
+                                         loss=lambda s, d, k, q, a: k == kind)
+                rounds(actors, bus, 3, "swap")
+                self.assertEqual(self.check(actors), {1: set(scores), 2: set()})
+                bus.loss = None
+                rounds(actors, bus, 10, "swap")
+                self.assertEqual([len(g) for g in self.check(actors).values()], [2, 2])
+
+    def test_legacy_utilization_argument_does_not_limit_assignment(self):
+        from dataclasses import asdict
+        from mrp.grouping import run_grouping
+        from mrp.tests.test_local_extensions import instance, worker
+        inst = instance([worker(w, (2, 1)) for w in range(1, 7)])
+        params = Params(cap_util=0.001)
+        anchors = {1: (1, 0)}
+        result = run_grouping(inst, anchors, params, Bus(anchors, params.R_c))
+        self.assertEqual(result.groups, {1: list(range(1, 7))})
+        self.assertFalse(result.unclaimed)
+        self.assertNotIn("cap_util", asdict(params))
 
     def test_capacity_aware_local_bids_and_id_tie(self):
         actors, bus = self.actors({1: {1: 1, 2: 1}, 2: {1: 1, 2: 2}})
@@ -84,7 +147,7 @@ class NegotiationTests(unittest.TestCase):
         self.assertEqual(len(groups[3]), 1)
         self.assertEqual(len(set.union(*groups.values())), 3)
 
-    def test_utilization_swap_makes_room_without_spare_peer_count_slot(self):
+    def test_exchange_can_admit_worker_with_explicit_count_limit(self):
         actors, bus = self.actors({1: {1: 1, 2: 2, 3: 3}, 2: {1: 2, 2: 1}},
                                  {1: {1}, 2: {2}}, cap=2)
         actors[0].agent.util = {1: 1.2, 2: 0.2, 3: 0.5}

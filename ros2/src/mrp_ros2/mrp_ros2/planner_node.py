@@ -95,6 +95,7 @@ class PlannerNode(Node):
             raise ValueError('One or more worker groups have no feasible hypercycle')
         paths=[]
         tracks={}
+        battery={}
         setup={}
         setup_sweeps={}
         for rid, g in sorted(result.plans.items()):
@@ -112,6 +113,21 @@ class PlannerNode(Node):
                         worker=next(w for w in inst.workers if w.id==wid)
                         sweeps=[None]+[model.worker_transition_cells(inst,worker,a,b) for a,b in zip(positions[1:-1],positions[2:])]
                     tracks[f'w{wid}']={'path':positions[1:], 'sweeps':[sorted(s) for s in sweeps[1:]]}
+                    worker=next(w for w in inst.workers if w.id==wid)
+                    period=g.res.M-1
+                    drains=[0]*g.res.M
+                    for t in range(1,min(g.res.T,g.res.M)):
+                        if positions[t] != positions[t+1]:
+                            drains[t]=worker.req[(t-1)%len(worker.req)]
+                    charges={}
+                    for event_wid,t,_local_rid,_ in g.res.instances:
+                        if event_wid==wid: charges[str(t)]=int(rid)
+                    for event_wid,start,duration in g.res.last:
+                        if event_wid==wid:
+                            for t in range(start,start+duration): charges[str(t)]=0
+                    battery[str(wid)]={'capacity':worker.fch,'drains':drains,
+                        'charges':charges,'period':period,'T':g.res.T,
+                        'delta_max':inst.delta_max}
             else:
                 tracks[key]={'path':[anchors[rid],anchors[rid]], 'sweeps':[[anchors[rid]]]}
         if {int(k[1:]) for k in tracks if k.startswith('w')} != {w.id for w in inst.workers}:
@@ -130,6 +146,7 @@ class PlannerNode(Node):
         payload['metrics']['deployment_status']='PLANNED_AWAITING_ROS_EXECUTION'
         payload['heartbeat_policy']={'period':result.P.hb_period,'missed':result.P.k_missed}
         payload.update(schema=2, session=uuid.uuid4().hex, tracks=tracks,
+                       battery=battery,
                        setup=setup, setup_sweeps=setup_sweeps,
                        setup_confirmed=False)
         # Validate the executable contract before publishing. Physical setup is

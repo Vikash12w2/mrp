@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import InitVar, dataclass
 
 
 def default_Rs(map_side: int) -> int:
@@ -12,10 +12,10 @@ class Params:
     u1: float = 1.0               # S = u1*wait + u2*travel + u3*earliness
     u2: float = 0.1
     u3: float = 0.01
-    cap_util: float = 1.5         # heuristic utilisation cap (see grouping.Agent.util_share)
-    cap_n: int = 4                # max workers per SMT problem
+    cap_util: InitVar[float | None] = None  # legacy input accepted but ignored; no utilization cap
+    cap_n: int | None = None      # optional explicit SMT group-size limit; uncapped by default
     K_round: int = 20
-    K_swap: int = 10              # local bilateral negotiation rounds
+    K_swap: int = 10              # minimum balancing budget (scaled with candidates); 0 disables
     K_unclaimed: int = 10         # local offload + auction cycles, not a global move budget
     eps: float = 1e-9
     K_T: int = 4                  # T-alignment attempts (aligned groups only)

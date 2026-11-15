@@ -47,6 +47,10 @@ class Refiner(Negotiator):
                        tuple(sorted(left)), tuple(sorted(right)))
                 if key in self.tried or not self.fits(own, left) or not self.fits(state, right):
                     continue
+                if self.compare_cost(self.balance_cost(own, left, state, right),
+                                     self.balance_cost(own, self.members, state, other),
+                                     self.agent.P.eps) > 0:
+                    continue
                 self.tried.add(key)
                 trial = self.solve_local(left)
                 if trial is not None:
