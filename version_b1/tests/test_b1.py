@@ -102,7 +102,7 @@ class B1Tests(unittest.TestCase):
         result = group_workers(inst, anchors, excluded=excluded, min_assigned=2)
         self.assertEqual(result.status, 'UNSAT')
 
-    def retry_fixture(self, reject):
+    def retry_fixture(self, reject, failure_status='SEARCH_EXHAUSTED'):
         # Isolate retry orchestration from SMT search/tie-breaking. Real SMT is
         # exercised separately by the CLI demo.
         from ...planner import GroupPlan, overlap_neighbors
@@ -115,7 +115,7 @@ class B1Tests(unittest.TestCase):
                 result = None
                 if ws:
                     if reject(len(calls)):
-                        result = Result(False, status='UNKNOWN', note='injected search limit')
+                        result = Result(False, status=failure_status, note='injected solver outcome')
                     else:
                         result = Result(True, T=2, M=2, nW=len(ws),
                             wpos={w.id: [None, w.loop[0], w.loop[0]] for w in inst.workers if w.id in ws},
@@ -134,7 +134,18 @@ class B1Tests(unittest.TestCase):
         self.assertNotEqual(calls[0], calls[1])
         self.assertTrue(result.report()['executable'])
         self.assertEqual(result.retry_status, 'SUCCESS')
-        self.assertEqual(result.attempts[0]['planning_status'], 'UNKNOWN')
+        self.assertEqual(result.attempts[0]['planning_status'], 'INCOMPLETE_OR_UNSAFE')
+
+    def test_planning_unknown_preserves_assignment_without_regrouping(self):
+        inst, anchors = demo()
+        calls, solve = self.retry_fixture(lambda attempt: True, 'UNKNOWN')
+        with patch('mrp.version_b1.pipeline.run_wavefront', side_effect=solve):
+            result = run_b1(inst, anchors)
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(result.retry_status, 'PLANNING_UNKNOWN')
+        self.assertEqual(result.report()['planning_status'], 'UNKNOWN')
+        self.assertFalse(result.report()['executable'])
+        self.assertEqual(result.central.grouping.groups, calls[0])
 
     def test_retry_limit_preserves_failure_diagnostics(self):
         inst, anchors = demo()

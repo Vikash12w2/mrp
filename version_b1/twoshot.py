@@ -255,12 +255,9 @@ def solve(inst: Instance, o: Optional[Options] = None) -> Result:
     res.soft_eff = 100.0 * (nW * M - (hard_wait - len(instances) - lastrech)) / (nW * M)
     return res
 
-def solve_isolated(inst: Instance, o: Optional[Options] = None, timeout_s=60) -> Result:
+def solve_isolated(inst: Instance, o: Optional[Options] = None) -> Result:
     """Solve in a fresh process so Z3's global state (and thus tie-breaking among equally optimal
     models) cannot depend on what was solved earlier -> reproducible results."""
     import multiprocessing as mp
     with mp.get_context("spawn").Pool(1, maxtasksperchild=1) as pool:
-        try:
-            return pool.apply_async(solve, (inst, o or Options())).get(timeout=timeout_s)
-        except mp.TimeoutError:
-            return Result(False, status='UNKNOWN', note=f'group planning time budget exceeded ({timeout_s:.1f}s)')
+        return pool.apply(solve, (inst, o or Options()))

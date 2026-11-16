@@ -92,6 +92,11 @@ def run_b1(inst, anchors, params=None, timeout_ms=0, parallel=True, grouping_onl
         if report['executable']:
             current.retry_status = 'SUCCESS'
             break
+        # UNKNOWN is inconclusive (for example an explicitly selected Z3
+        # resource limit), not evidence against this worker assignment.
+        if any(g.res and g.res.status == 'UNKNOWN' for g in plans.values()):
+            current.retry_status = 'PLANNING_UNKNOWN'
+            break
         if central.grouping.unclaimed:
             # With no grouping caps, these workers have no geometric candidate.
             current.retry_status = 'UNREACHABLE_WORKERS'

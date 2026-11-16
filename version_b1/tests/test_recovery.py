@@ -1,5 +1,4 @@
 from dataclasses import replace
-import multiprocessing as mp
 import unittest
 from unittest.mock import patch, MagicMock
 from ..demo import demo
@@ -50,14 +49,17 @@ class RecoveryTests(unittest.TestCase):
                               Bus(anchors, params.R_c), False, cache=cache)
         self.assertEqual(len(calls), 2)
 
-    def test_timeout_is_unknown_not_infeasibility(self):
+    def test_isolated_solver_waits_without_time_cutoff(self):
         inst, _ = demo()
         context = MagicMock()
-        context.Pool.return_value.__enter__.return_value.apply_async.return_value.get.side_effect = mp.TimeoutError
+        pool = context.Pool.return_value.__enter__.return_value
+        expected = Result(False, status='SEARCH_EXHAUSTED')
+        pool.apply.return_value = expected
         with patch('multiprocessing.get_context', return_value=context):
-            result = solve_isolated(inst, timeout_s=.01)
-        self.assertFalse(result.ok)
-        self.assertEqual(result.status, 'UNKNOWN')
+            result = solve_isolated(inst)
+        self.assertIs(result, expected)
+        pool.apply.assert_called_once()
+        pool.apply_async.assert_not_called()
 
     def test_conflicting_candidate_not_accepted(self):
         inst, anchors, _, solve = self.fixture()

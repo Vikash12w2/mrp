@@ -121,7 +121,7 @@ from the next central optimization, retaining the initial maximum assigned count
 The optimizer can relax balance or distance objectives to find another partition;
 it cannot silently drop workers to manufacture success.
 
-Failures, UNKNOWN results, fallback plans, detected conflicts, insufficient joint
+Completed unsuccessful searches, fallback plans, detected conflicts, insufficient joint
 period verification and blocked deployment all reject an attempt. Successful plans are cached within one B1 run. Reuse requires identical solver
 inputs, including worker energy data, map, region, cycle and upstream swept
 occupancy. Changed dependencies trigger replanning.
@@ -130,14 +130,17 @@ runtime reservation controller is still not used.
 
 `attempts` records every partition tried, per-group solver outcomes, conflicts and
 deployment status. `retry_status` distinguishes SUCCESS, RETRY_LIMIT_REACHED,
-ASSIGNMENTS_EXHAUSTED, GROUPING_UNKNOWN and UNREACHABLE_WORKERS. On exhaustion,
+ASSIGNMENTS_EXHAUSTED, GROUPING_UNKNOWN, PLANNING_UNKNOWN and UNREACHABLE_WORKERS. On exhaustion,
 the final attempted plans remain available for diagnostics but are non-executable.
 Exhaustion means no untried assignment at the required coverage remains; it does
 not prove physical infeasibility, especially after UNKNOWN or bounded SMT searches.
 Unreachable workers stop retries because reassignment cannot create a physical path.
-Each group job has a 60-second planning budget shared by at most two local
-horizon attempts. A killed solver returns UNKNOWN, not UNSAT. Grouping has its
-separate timeout; there is no overall mission-search wall-clock deadline. This is offline search, not runtime failure recovery.
+There is no wall-clock cutoff on group planning. Each solver call runs to
+completion, with at most two local horizon attempts per group job. An UNKNOWN
+solver outcome stops the pipeline with PLANNING_UNKNOWN and preserves the current
+assignment; it does not trigger regrouping or exclude that assignment. Explicit
+Z3 resource limits and the separate grouping timeout remain available. There is
+no overall mission-search wall-clock deadline. This is offline search, not runtime failure recovery.
 
 ## Group-specific planning areas and phase-1 selection
 
@@ -152,7 +155,7 @@ Each partition starts with local regions and the initial cycle choices. If an
 aligned group fails after bounded local horizon retries, B1 can try two longer
 shared cycles, increasing by four time points each time. Only failed overlap
 components are retimed; all affected schedules and upstream occupancy are rebuilt.
-A solver timeout returns directly to regrouping. There is no padding of existing
+An UNKNOWN solver outcome stops with diagnostics rather than regrouping. There is no padding of existing
 trajectories, and final full-joint-period verification remains mandatory.
 Cycle attempts and forced cycles appear in `region_attempts`; cache hits appear
 in plan notes. These bounded candidates can miss feasible intermediate cycles.

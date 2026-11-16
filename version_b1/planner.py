@@ -18,10 +18,7 @@ def solve_job(job):
     start = time.monotonic()
     result = Result(False, status='NO_PLAN', note='no valid alignment horizon')
     for horizon in horizons[:2]:
-        remaining = 60 - (time.monotonic()-start)
-        if remaining <= 0:
-            break
-        result = solve_isolated(replace(sub, T=horizon), opts, timeout_s=remaining)
+        result = solve_isolated(replace(sub, T=horizon), opts)
         if result.ok or result.status == 'UNKNOWN':
             break
     return result, time.monotonic()-start
