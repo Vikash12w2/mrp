@@ -58,9 +58,10 @@ def run_b1(inst, anchors, params=None, timeout_ms=0, parallel=True, grouping_onl
     excluded, history = [], []
     current = None
     required = 0
+    cache, previous, focus = {}, None, set()
     for index in range(max_regroupings + 1):
         central = group_workers(inst, anchors, params, timeout_ms,
-                                excluded=excluded, min_assigned=required)
+                                excluded=excluded, min_assigned=required, previous=previous, focus=focus)
         if central.status != 'OPTIMAL':
             history.append(dict(attempt=index + 1, grouping_status=central.status,
                                 reason=central.reason, grouping_seconds=central.seconds))
@@ -75,9 +76,7 @@ def run_b1(inst, anchors, params=None, timeout_ms=0, parallel=True, grouping_onl
         p = central.params
         bus = Bus(anchors, p.R_c, p.retries)
         groups = {r: set(ws) for r, ws in central.grouping.groups.items()}
-        # An ownership change can alter all downstream occupancy and alignment
-        # constraints. Rebuild every group to avoid reusing stale reservations.
-        plans, order, neighbors = run_wavefront(inst, groups, anchors, p, bus, parallel)
+        plans, order, neighbors = run_wavefront(inst, groups, anchors, p, bus, parallel, cache=cache)
         local = DResult(central.grouping, plans, order, verify(plans), bus, neighbors,
                         inst, anchors, p, 0, [])
         local.deployment = plan_deployment(inst, plans, anchors, p, bus)
@@ -97,6 +96,10 @@ def run_b1(inst, anchors, params=None, timeout_ms=0, parallel=True, grouping_onl
             # With no grouping caps, these workers have no geometric candidate.
             current.retry_status = 'UNREACHABLE_WORKERS'
             break
+        previous = central.grouping.groups
+        focus = {r for r, g in plans.items() if g.workers and not g.live}
+        # Include direct constraining predecessors and possible exchange partners.
+        focus |= {n for r in tuple(focus) for n in neighbors[r]}
         excluded.append(central.grouping.groups)
         current.retry_status = 'RETRY_LIMIT_REACHED'
     current.seconds = time.monotonic()-start

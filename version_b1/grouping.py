@@ -18,7 +18,7 @@ class CentralGrouping:
     scope: str
 
 
-def group_workers(inst, anchors, params=None, timeout_ms=0, *, excluded=(), min_assigned=0):
+def group_workers(inst, anchors, params=None, timeout_ms=0, *, excluded=(), min_assigned=0, previous=None, focus=()):
     started = time.monotonic()
     p = params or Params()
     if timeout_ms < 0 or inst.delta_max <= 0 or inst.T < 4:
@@ -100,6 +100,32 @@ def group_workers(inst, anchors, params=None, timeout_ms=0, *, excluded=(), min_
     work_gap = z3.Sum([z3.IntVal(0)] + [z3.If(workloads[r] >= workloads[s],
         workloads[r]-workloads[s], workloads[s]-workloads[r])
         for r in agents for s in agents if r < s])
+    # Recovery first keeps ownership outside the failed dependency neighborhood
+    # when possible; this is a preference, never an eligibility restriction.
+    if previous and focus:
+        changes = [z3.If(x[r, w], 0, 1) for r, ws in previous.items()
+                   if r not in focus for w in ws if (r, w) in x]
+        opt.minimize(z3.Sum([z3.IntVal(0)] + changes))
+    # Approximate service effort over T: charging time plus a return trip and
+    # travel between worker charging neighborhoods. Battery pressure is a
+    # heuristic: the SMT model can wait without consuming energy.
+    service = {}
+    for r, a in agents.items():
+        charge = z3.Sum([z3.IntVal(0)] + [z3.If(x[r,w], real(demand[w]*inst.T), 0) for w in a.cand])
+        outward = z3.Real(f'outward_{r}')
+        opt.add(outward >= 0)
+        for w in a.cand:
+            opt.add(outward >= z3.If(x[r,w], real(distances[r,w]), 0))
+        pair_travel = z3.Sum([z3.IntVal(0)] + [
+            z3.If(z3.And(x[r,w], x[r,v]), real(d if d is not None else Fraction((inst.xmax+1)*(inst.ymax+1))), 0)
+            for (w,v), d in pairs.items() if (r,w) in x and (r,v) in x])
+        service[r] = charge + 2*outward + pair_travel
+    peak = z3.Real('peak_service')
+    opt.add(peak >= 0)
+    for effort in service.values():
+        opt.add(peak >= effort)
+    opt.minimize(peak)
+    opt.minimize(z3.Sum([z3.IntVal(0)] + list(workloads.values())))
     opt.minimize(spatial)
     opt.minimize(work_gap)
     opt.minimize(imbalance)
@@ -118,7 +144,8 @@ def group_workers(inst, anchors, params=None, timeout_ms=0, *, excluded=(), min_
                 groups[r].append(w)
         status, reason = 'OPTIMAL', ''
         objectives = dict(assigned=sum(map(len, groups.values())),
-                          policy='coverage, spatial cohesion, estimated workload, demand, count',
+                          policy='coverage, recovery locality, peak service, battery-weighted workload, spatial cohesion, balance',
+                          peak_service=str(model.eval(peak)),
                           spatial_cost=str(model.eval(spatial)),
                           workload_gap=str(model.eval(work_gap)),
                           count_square=sum(len(v)**2 for v in groups.values()),

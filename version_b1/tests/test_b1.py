@@ -108,7 +108,7 @@ class B1Tests(unittest.TestCase):
         from ...planner import GroupPlan, overlap_neighbors
         from ...twoshot import Result
         calls = []
-        def solve(inst, groups, anchors, params, bus, parallel):
+        def solve(inst, groups, anchors, params, bus, parallel, **kwargs):
             calls.append({r: sorted(ws) for r, ws in groups.items()})
             plans = {}
             for r, ws in groups.items():

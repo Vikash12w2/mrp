@@ -19,24 +19,25 @@ priority of reducing unassigned workers and the small benchmark group sizes.
 The central unit knows the complete map, all workers and all recharger anchors.
 Groups are not limited to Version A sensing boxes. Physical obstacle reachability
 still applies. Each group now plans within its own obstacle-aware region, with
-bounded expansion when necessary; global knowledge does not force global planning.
+a new region computed for each new assignment; global knowledge does not force global planning.
 Anchors are physical setup positions, not movable cluster centroids.
 
 Lexicographic objectives:
 
 1. Maximize assigned workers, with at most one owner per worker.
-2. Minimize spatial cost: mean anchor-to-loop distance plus pairwise distances
-   between workers assigned together. Pair distance averages nearest reachable
-   charging-neighborhood distances over all loop points in both directions.
-   Distances follow actual motion primitives and obstacle-free swept cells.
-3. Minimize differences in estimated workload: charging demand plus anchor travel
-   weighted by consumption/capacity. This is an estimate, not a schedule or cap.
-4. Break remaining ties by charging-demand balance, then worker-count balance.
-5. Break final ties deterministically by worker and recharger IDs.
+2. During recovery, prefer retaining ownership outside the failed groups and
+   their direct dependency/exchange neighbors, without forbidding wider changes.
+3. Minimize the busiest recharger's estimated service effort: charging demand
+   over T, twice the maximum mean anchor-to-loop distance (return travel), and
+   pairwise worker charging-neighborhood distances.
+4. Minimize total consumption/capacity-weighted travel plus charging demand,
+   then spatial cost, workload imbalance, demand imbalance and count imbalance.
+5. Break remaining ties deterministically by worker and recharger IDs.
 
-Spatial cohesion takes precedence over balance: unequal worker counts are allowed.
-The pairwise-distance sum is a tour proxy, not an exact travelling-salesman route;
-charging demand and worker arrival times are subsequently checked by SMT.
+These are scheduling estimates, not deadlines or exact tours. Waiting consumes
+no battery in the SMT model, so battery urgency is a heuristic, not a hard cutoff.
+Unequal group sizes are allowed. Only the subsequent SMT schedule establishes
+feasibility under the model.
 
 There is no utilization or worker-count cap. A single recharger can receive all
 eligible workers. An unreachable worker remains explicitly unassigned. Geometric
@@ -85,7 +86,7 @@ notes distinguish UNSAT, UNKNOWN and exhausted horizon search. The overall
 result is non-executable and the full-run CLI exits with code 2. B1 does not
 execute a partial mission or retry indefinitely. It tries alternative assignments
 offline as described below.
-B1 can try alternative alignment horizons, then larger planning regions. It never
+B1 can try alternative alignment horizons, then returns failure for central regrouping. It never
 drops higher-priority collision reservations to obtain an unconstrained fallback.
 
 ## Outputs and boundaries
@@ -121,8 +122,9 @@ The optimizer can relax balance or distance objectives to find another partition
 it cannot silently drop workers to manufacture success.
 
 Failures, UNKNOWN results, fallback plans, detected conflicts, insufficient joint
-period verification and blocked deployment all reject an attempt. Every group is
-replanned because changed ownership may change downstream timing and occupancy.
+period verification and blocked deployment all reject an attempt. Successful plans are cached within one B1 run. Reuse requires identical solver
+inputs, including worker energy data, map, region, cycle and upstream swept
+occupancy. Changed dependencies trigger replanning.
 Only a complete verified result with ready deployment is accepted. The two-step
 runtime reservation controller is still not used.
 
@@ -133,8 +135,9 @@ the final attempted plans remain available for diagnostics but are non-executabl
 Exhaustion means no untried assignment at the required coverage remains; it does
 not prove physical infeasibility, especially after UNKNOWN or bounded SMT searches.
 Unreachable workers stop retries because reassignment cannot create a physical path.
-Each grouping timeout and SMT resource limit applies per solve; a retry count is
-not a wall-clock timeout. This is offline search, not runtime failure recovery.
+Each group job has a 60-second planning budget shared by at most two local
+horizon attempts. A killed solver returns UNKNOWN, not UNSAT. Grouping has its
+separate timeout; there is no overall mission-search wall-clock deadline. This is offline search, not runtime failure recovery.
 
 ## Group-specific planning areas and phase-1 selection
 
@@ -145,10 +148,17 @@ rechargers occupy a single-cell box. Box overlap determines possible inter-group
 interaction. Geometry is conservative: intersecting boxes may still contain
 non-interacting routes.
 
-A failed/inconclusive/conflicting region attempt causes a rebuild with expanded
-boxes; a third attempt permits the full map. Dependencies and all affected plans
-are rebuilt on each expansion. No ownership change is needed for this expansion.
-Only then does the existing bounded partition retry mechanism try other groups.
+Each partition starts with local regions and the initial cycle choices. If an
+aligned group fails after bounded local horizon retries, B1 can try two longer
+shared cycles, increasing by four time points each time. Only failed overlap
+components are retimed; all affected schedules and upstream occupancy are rebuilt.
+A solver timeout returns directly to regrouping. There is no padding of existing
+trajectories, and final full-joint-period verification remains mandatory.
+Cycle attempts and forced cycles appear in `region_attempts`; cache hits appear
+in plan notes. These bounded candidates can miss feasible intermediate cycles.
+There are no expanded-box/full-map retries. Failed partitions are excluded and
+regrouped at the same coverage. Geometry or search failure does not prove global
+infeasibility.
 Setup paths remain separately coordinated over the full map, allowing robots to
 reach their selected start positions without weakening hypercycle constraints.
 
@@ -164,6 +174,6 @@ The output includes planning boxes, region attempts, phase-1 waiting, completion
 steps and per-group efficiency. The first complete verified partition is still
 accepted: there is no post-success enumeration of assignments or schedules.
 These changes improve the heuristic selection, not a guarantee of globally
-optimal efficiency. Region expansion and extra SMT objectives can add solve time;
+optimal efficiency. Alignment retries and extra SMT objectives can add solve time;
 compare quality and wall time on matched input/anchor/settings before claiming a
 benchmark-wide gain. Previously saved study results describe the old B1 policy.

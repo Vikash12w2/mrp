@@ -1,4 +1,3 @@
-"""Obstacle-aware geometry shared by B1 assignment and local planning."""
 from collections import deque
 from fractions import Fraction
 from ..model import OFFS8, worker_edge_cells

@@ -10,7 +10,7 @@ from ...model import WorkerSpec
 
 
 class EfficiencyTests(unittest.TestCase):
-    def test_region_failure_expands_and_rebuilds_plan(self):
+    def test_region_failure_returns_without_replanning_same_partition(self):
         from ...bus import Bus
         from ...params import Params
         from ...twoshot import Result
@@ -31,10 +31,10 @@ class EfficiencyTests(unittest.TestCase):
         with patch('mrp.version_b1.planner.solve_job', side_effect=solve):
             plans, _, _ = run_wavefront(inst, {1: {1}}, anchors, params,
                                          Bus(anchors, params.R_c), False)
-        self.assertEqual(len(seen), 2)
-        self.assertNotEqual(seen[0], seen[1])
-        self.assertTrue(plans[1].live)
-        self.assertEqual(len(plans[1].region_history), 2)
+        self.assertEqual(len(seen), 1)
+        self.assertFalse(plans[1].live)
+        self.assertEqual(plans[1].res.status, 'UNSAT')
+        self.assertEqual(len(plans[1].region_history), 1)
 
     def test_failed_higher_plan_never_becomes_unconstrained_fallback(self):
         from ...bus import Bus
