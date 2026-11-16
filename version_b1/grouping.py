@@ -4,6 +4,7 @@ import time
 import z3
 from ..grouping import Agent, GroupingResult, summarize_unclaimed
 from ..params import Params
+from .geometry import loop_distance
 
 
 @dataclass
@@ -75,9 +76,34 @@ def group_workers(inst, anchors, params=None, timeout_ms=0, *, excluded=(), min_
             distances[r, w] = Fraction(sum(reachable), len(reachable))
     travel = z3.Sum([z3.IntVal(0)] + [z3.If(x[pair], real(d), 0) for pair, d in distances.items()])
     opt.maximize(assigned)
-    opt.minimize(balance)
+    # Spatial cohesion comes before balancing: equal counts must not force
+    # geographically scattered charging tours. Pair costs use entire loops.
+    pairs = {}
+    for i, w in enumerate(sorted(ids)):
+        for v in sorted(ids)[i+1:]:
+            if any((r, w) in x and (r, v) in x for r in agents):
+                pairs[w, v] = loop_distance(inst, by_id[w], by_id[v])
+    tour_terms = []
+    for r in agents:
+        for (w, v), distance in pairs.items():
+            if (r, w) not in x or (r, v) not in x:
+                continue
+            # No new eligibility cap: disconnected sample neighborhoods do not
+            # establish that the entire worker pair is impossible to serve.
+            d = distance if distance is not None else Fraction((inst.xmax+1)*(inst.ymax+1))
+            tour_terms.append(z3.If(z3.And(x[r, w], x[r, v]), real(d), 0))
+    spatial = travel + z3.Sum([z3.IntVal(0)] + tour_terms)
+    workloads = {r: z3.Sum([z3.IntVal(0)] + [z3.If(x[r, w],
+        real(demand[w] + distances[r, w] * Fraction(sum(by_id[w].req),
+             len(by_id[w].req)*by_id[w].fch)), 0) for w in a.cand])
+        for r, a in agents.items()}
+    work_gap = z3.Sum([z3.IntVal(0)] + [z3.If(workloads[r] >= workloads[s],
+        workloads[r]-workloads[s], workloads[s]-workloads[r])
+        for r in agents for s in agents if r < s])
+    opt.minimize(spatial)
+    opt.minimize(work_gap)
     opt.minimize(imbalance)
-    opt.minimize(travel)
+    opt.minimize(balance)
     # Stable individual ownership after all substantive objectives are fixed.
     rank = {r: i+1 for i, r in enumerate(agents)}
     for w in sorted(ids):
@@ -92,6 +118,9 @@ def group_workers(inst, anchors, params=None, timeout_ms=0, *, excluded=(), min_
                 groups[r].append(w)
         status, reason = 'OPTIMAL', ''
         objectives = dict(assigned=sum(map(len, groups.values())),
+                          policy='coverage, spatial cohesion, estimated workload, demand, count',
+                          spatial_cost=str(model.eval(spatial)),
+                          workload_gap=str(model.eval(work_gap)),
                           count_square=sum(len(v)**2 for v in groups.values()),
                           demand_loads={r: float(sum((demand[w] for w in members), Fraction()))
                                         for r, members in groups.items()},

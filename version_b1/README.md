@@ -2,9 +2,11 @@
 
 This separate package implements the **offline B1 branch** in
 `Decentralized Recharger Planning - Plans.pdf`: one central unit forms groups
-before execution; the existing two-shot SMT algorithm plans each group.
+before execution; a B1 variant of the two-shot SMT algorithm plans each group.
 No Version A negotiation or ROS code is used for grouping. Existing source files
-are imported, not edited or copied.
+are not edited. B1's `twoshot.py` contains a phase-1 encoding derived from the
+original, with additional secondary objectives; shared phase-2 constraints remain
+imported. Encoding fixes in the original phase 1 must also be ported to this copy.
 
 ## Why G2
 
@@ -16,19 +18,25 @@ priority of reducing unassigned workers and the small benchmark group sizes.
 
 The central unit knows the complete map, all workers and all recharger anchors.
 Groups are not limited to Version A sensing boxes. Physical obstacle reachability
-still applies. The planning region is the full map, too; otherwise global
-assignments could be rejected merely because the local planner used a smaller box.
+still applies. Each group now plans within its own obstacle-aware region, with
+bounded expansion when necessary; global knowledge does not force global planning.
 Anchors are physical setup positions, not movable cluster centroids.
 
 Lexicographic objectives:
 
 1. Maximize assigned workers, with at most one owner per worker.
-2. Minimize the sum of squared group sizes (balanced worker counts).
-3. Minimize pairwise differences in charging demand. Demand is average worker
-   energy per step divided by maximum recharge per step.
-4. Minimize mean obstacle-aware primitive-step distance from the assigned anchor
-   to reachable recharge neighbors along each loop.
-5. Break ties deterministically by worker and recharger IDs.
+2. Minimize spatial cost: mean anchor-to-loop distance plus pairwise distances
+   between workers assigned together. Pair distance averages nearest reachable
+   charging-neighborhood distances over all loop points in both directions.
+   Distances follow actual motion primitives and obstacle-free swept cells.
+3. Minimize differences in estimated workload: charging demand plus anchor travel
+   weighted by consumption/capacity. This is an estimate, not a schedule or cap.
+4. Break remaining ties by charging-demand balance, then worker-count balance.
+5. Break final ties deterministically by worker and recharger IDs.
+
+Spatial cohesion takes precedence over balance: unequal worker counts are allowed.
+The pairwise-distance sum is a tour proxy, not an exact travelling-salesman route;
+charging demand and worker arrival times are subsequently checked by SMT.
 
 There is no utilization or worker-count cap. A single recharger can receive all
 eligible workers. An unreachable worker remains explicitly unassigned. Geometric
@@ -53,8 +61,8 @@ PYTHONDONTWRITEBYTECODE=1 python3 -m mrp.version_b1 \
 
 `--group-mode two_shot` is the default; `one_shot` and `auto` are also available.
 Parallel planning is enabled by default; `--sequential` disables it. Independent
-wavefront groups can solve concurrently, while collision dependencies remain ordered. Global planning
-regions overlap, so priority constraints often serialize planning.
+wavefront groups can solve concurrently. Only overlapping planning boxes create
+hypercycle dependencies; overlapping groups remain ordered by recharger ID.
 `--grouping-timeout-ms` limits central optimization; `--rlimit` sets the existing
 per-SMT resource limit. Both default to unlimited. Larger full-map SMT problems
 can be substantially slower than Version A's small regional problems.
@@ -77,10 +85,8 @@ notes distinguish UNSAT, UNKNOWN and exhausted horizon search. The overall
 result is non-executable and the full-run CLI exits with code 2. B1 does not
 execute a partial mission or retry indefinitely. It tries alternative assignments
 offline as described below.
-The shared planner can try alternative alignment horizons and an unconstrained
-fallback; B1 rejects fallback plans as executable even when the fallback is SAT.
-A shared-planner note mentioning "runtime collision handling" describes that
-fallback, not a runtime controller enabled in B1.
+B1 can try alternative alignment horizons, then larger planning regions. It never
+drops higher-priority collision reservations to obtain an unconstrained fallback.
 
 ## Outputs and boundaries
 
@@ -91,8 +97,8 @@ fallback, a conflict is found, deployment is not ready, or the joint period exce
 the existing verifier's 3000-step limit. This is an offline model check, not a
 hardware safety certification.
 
-The per-group planning, collision constraints, wavefront ordering and deployment
-simulation reuse the original planner. Central grouping is implemented here.
+B1 implements grouping and region-aware wavefront planning here, while reusing
+the original collision encoding helpers, phase 2, verification and setup simulation.
 Bounded offline regrouping is implemented; finding a feasible partition is not guaranteed. No online B2
 auction, lazy adoption, runtime regrouping, failure-triggered regrouping or ROS
 integration is included in this offline B1 branch. Those need a separate execution
@@ -103,7 +109,7 @@ Tests (all new tests live here):
 
 ```bash
 cd ~/Downloads
-PYTHONDONTWRITEBYTECODE=1 python3 -m unittest mrp.version_b1.tests.test_b1
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest mrp.version_b1.tests.test_b1 mrp.version_b1.tests.test_efficiency
 ```
 
 ## Offline regrouping after failure
@@ -129,3 +135,35 @@ not prove physical infeasibility, especially after UNKNOWN or bounded SMT search
 Unreachable workers stop retries because reassignment cannot create a physical path.
 Each grouping timeout and SMT resource limit applies per solve; a retry count is
 not a wall-clock timeout. This is offline search, not runtime failure recovery.
+
+## Group-specific planning areas and phase-1 selection
+
+Initial boxes contain the anchor, full worker loops and supplied worker sweeps,
+reachable charging neighbors, and shortest primitive paths from the anchor to
+those neighbors (including obstacle detours), with a one-cell margin. Idle
+rechargers occupy a single-cell box. Box overlap determines possible inter-group
+interaction. Geometry is conservative: intersecting boxes may still contain
+non-interacting routes.
+
+A failed/inconclusive/conflicting region attempt causes a rebuild with expanded
+boxes; a third attempt permits the full map. Dependencies and all affected plans
+are rebuilt on each expansion. No ownership change is needed for this expansion.
+Only then does the existing bounded partition retry mechanism try other groups.
+Setup paths remain separately coordinated over the full map, allowing robots to
+reach their selected start positions without weakening hypercycle constraints.
+
+Phase 1 still minimizes worker waiting first. Among tied solutions, B1 minimizes
+an obstacle-aware completion estimate (end-to-worker charging location, remaining
+charge duration, and worker-to-cycle-start travel), then total completion estimate,
+remaining charge duration, and phase-1 movement cost. These estimates ignore
+multi-worker visit ordering and dynamic obstacles; phase 2 enforces those actual
+constraints and determines the final cycle length. One-shot planning keeps its
+original objective because it already closes the cycle within one solve.
+
+The output includes planning boxes, region attempts, phase-1 waiting, completion
+steps and per-group efficiency. The first complete verified partition is still
+accepted: there is no post-success enumeration of assignments or schedules.
+These changes improve the heuristic selection, not a guarantee of globally
+optimal efficiency. Region expansion and extra SMT objectives can add solve time;
+compare quality and wall time on matched input/anchor/settings before claiming a
+benchmark-wide gain. Previously saved study results describe the old B1 policy.

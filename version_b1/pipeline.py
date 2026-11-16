@@ -4,7 +4,7 @@ import time
 from ..bus import Bus
 from ..decentralized import DResult
 from ..deployment import plan_deployment
-from ..planner import run_wavefront
+from .planner import run_wavefront
 from ..runtime import verify
 from .grouping import group_workers
 
@@ -20,6 +20,7 @@ class B1Result:
     def report(self):
         c, d = self.central, self.local
         out = dict(version='B1', method='G2/Z3', scope=c.scope, grouping_status=c.status,
+                   grouping_scope='global', planning_scope='group_specific_regions',
                    grouping_reason=c.reason, grouping_seconds=c.seconds, seconds=self.seconds,
                    groups=c.grouping.groups, unassigned=c.grouping.unclaimed,
                    objectives=c.objectives, planning_status='NOT_RUN', executable=False,
@@ -37,7 +38,13 @@ class B1Result:
                        g.res and g.res.status == 'UNKNOWN' for g in d.plans.values()) else 'INCOMPLETE_OR_UNSAFE',
                    executable=safe and metrics['deployment_ready'],
                    plans={r: dict(workers=g.workers, status=g.res.status if g.res else 'IDLE',
+                                  planning_box=getattr(g, 'box', None),
+                                  region_attempts=getattr(g, 'region_history', []),
                                   T=g.res.T if g.res else None, M=g.res.M if g.res else None,
+                                  phase1_wait=g.res.p1_wait if g.res else None,
+                                  completion_steps=g.res.M-g.res.T if g.live else None,
+                                  hard_eff=g.res.hard_eff if g.live else None,
+                                  soft_eff=g.res.soft_eff if g.live else None,
                                   fallback=g.fallback, notes=g.notes, seconds=g.wall)
                           for r, g in d.plans.items()})
         return out

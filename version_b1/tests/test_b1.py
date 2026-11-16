@@ -39,10 +39,11 @@ class B1Tests(unittest.TestCase):
         self.assertEqual(r.grouping.groups, {1: []})
         self.assertEqual(r.grouping.unclaimed, {2: 'unreachable_in_region'})
 
-    def test_demand_balances_after_worker_counts(self):
+    def test_demand_balances_when_spatial_costs_tie(self):
         inst, anchors = demo()
-        base = inst.workers[0]
-        inst = replace(inst, workers=tuple(replace(base, id=i, req=(q,)*4)
+        anchors = {1: (0, 2), 2: (6, 2)}
+        base = replace(inst.workers[0], loop=((3, 2),))
+        inst = replace(inst, workers=tuple(replace(base, id=i, req=(q,))
                                            for i, q in enumerate((4, 4, 1, 1), 1)))
         r = group_workers(inst, anchors)
         self.assertEqual(sorted(map(len, r.grouping.groups.values())), [2, 2])
