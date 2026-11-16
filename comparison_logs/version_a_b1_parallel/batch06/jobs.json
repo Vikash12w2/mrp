@@ -1,0 +1,206 @@
+[
+  {
+    "id": 11,
+    "case_id": "base-6",
+    "dataset": "input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        2,
+        7
+      ],
+      "2": [
+        2,
+        15
+      ],
+      "3": [
+        13,
+        3
+      ]
+    },
+    "input": "examples/input-artfloor",
+    "version": "version_a",
+    "planning_radius": 6,
+    "parallel": true,
+    "suite_kind": "previous_a_b1_case"
+  },
+  {
+    "id": 12,
+    "case_id": "base-6",
+    "dataset": "input-artfloor",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        2,
+        7
+      ],
+      "2": [
+        2,
+        15
+      ],
+      "3": [
+        13,
+        3
+      ]
+    },
+    "input": "examples/input-artfloor",
+    "version": "version_b1",
+    "planning_radius": null,
+    "parallel": true,
+    "suite_kind": "previous_a_b1_case"
+  },
+  {
+    "id": 23,
+    "case_id": "base-12",
+    "dataset": "input-random-30",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        13,
+        12
+      ]
+    },
+    "input": "examples/input-random-30",
+    "version": "version_a",
+    "planning_radius": 6,
+    "parallel": true,
+    "suite_kind": "previous_a_b1_case"
+  },
+  {
+    "id": 24,
+    "case_id": "base-12",
+    "dataset": "input-random-30",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        13,
+        12
+      ]
+    },
+    "input": "examples/input-random-30",
+    "version": "version_b1",
+    "planning_radius": null,
+    "parallel": true,
+    "suite_kind": "previous_a_b1_case"
+  },
+  {
+    "id": 35,
+    "case_id": "base-18",
+    "dataset": "input-warehouse",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        7,
+        2
+      ]
+    },
+    "input": "examples/input-warehouse",
+    "version": "version_a",
+    "planning_radius": 6,
+    "parallel": true,
+    "suite_kind": "previous_a_b1_case"
+  },
+  {
+    "id": 36,
+    "case_id": "base-18",
+    "dataset": "input-warehouse",
+    "workers": 2,
+    "rechargers": 1,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        7,
+        2
+      ]
+    },
+    "input": "examples/input-warehouse",
+    "version": "version_b1",
+    "planning_radius": null,
+    "parallel": true,
+    "suite_kind": "previous_a_b1_case"
+  },
+  {
+    "id": 47,
+    "case_id": "follow-61",
+    "dataset": "input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        9,
+        9
+      ],
+      "2": [
+        0,
+        0
+      ],
+      "3": [
+        0,
+        1
+      ]
+    },
+    "input": "examples/input-warehouse",
+    "version": "version_a",
+    "planning_radius": 8,
+    "baseline_job_id": 61,
+    "baseline_coverage": 83.33333333333333,
+    "parallel": true,
+    "suite_kind": "new_anchor_followup"
+  },
+  {
+    "id": 48,
+    "case_id": "follow-61",
+    "dataset": "input-warehouse",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        9,
+        9
+      ],
+      "2": [
+        0,
+        0
+      ],
+      "3": [
+        0,
+        1
+      ]
+    },
+    "input": "examples/input-warehouse",
+    "version": "version_b1",
+    "planning_radius": null,
+    "baseline_job_id": 61,
+    "baseline_coverage": 83.33333333333333,
+    "parallel": true,
+    "suite_kind": "new_anchor_followup"
+  }
+]

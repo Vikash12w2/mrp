@@ -48,7 +48,8 @@ def run_one(job, examples):
     if job['version'] == 'version_a':
         params = Params(R_s=int(job.get('planning_radius', 6)), seed=0,
                         collisions=True, phase2_optimize_cost=False)
-        result = run_decentralized(inst, anchors, params, parallel=False)
+        result = run_decentralized(inst, anchors, params,
+                                   parallel=bool(job.get('parallel', True)))
         m = result.metrics()
         full = m['coverage'] == 100
         fallback = m['fallback_groups']
@@ -68,7 +69,8 @@ def run_one(job, examples):
         # B1 groups globally over the map; same physical anchors, loops, and
         # requested horizon are used. Full-map neighborhood scope is intrinsic to B1.
         params = Params(R_s=side, seed=0, collisions=True, phase2_optimize_cost=False)
-        result = run_b1(inst, anchors, params, timeout_ms=0, parallel=False,
+        result = run_b1(inst, anchors, params, timeout_ms=0,
+                        parallel=bool(job.get('parallel', True)),
                         grouping_only=False, max_regroupings=5)
         report = result.report()
         m = report.get('metrics') or {}

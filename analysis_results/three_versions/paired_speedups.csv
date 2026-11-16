@@ -1,0 +1,3 @@
+method,matched,faster_than_central,median_speedup,geometric_mean_speedup
+A,22,21,2.847739323720276,5.258095404698803
+B1,22,13,1.2028135490307297,1.424833944730066

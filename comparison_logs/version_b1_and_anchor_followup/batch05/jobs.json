@@ -1,0 +1,123 @@
+[
+  {
+    "id": 5,
+    "case_id": "base-5",
+    "dataset": "input-artfloor",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        4,
+        9
+      ],
+      "2": [
+        12,
+        4
+      ]
+    },
+    "input": "examples/input-artfloor",
+    "version": "version_b1",
+    "suite_kind": "previous_case_b1"
+  },
+  {
+    "id": 11,
+    "case_id": "base-11",
+    "dataset": "input-random-20",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        6,
+        7
+      ],
+      "2": [
+        11,
+        8
+      ],
+      "3": [
+        13,
+        12
+      ]
+    },
+    "input": "examples/input-random-20",
+    "version": "version_b1",
+    "suite_kind": "previous_case_b1"
+  },
+  {
+    "id": 17,
+    "case_id": "base-17",
+    "dataset": "input-warehouse",
+    "workers": 1,
+    "rechargers": 1,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        7,
+        2
+      ]
+    },
+    "input": "examples/input-warehouse",
+    "version": "version_b1",
+    "suite_kind": "previous_case_b1"
+  },
+  {
+    "id": 23,
+    "case_id": "follow-27",
+    "dataset": "input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        9,
+        9
+      ],
+      "2": [
+        10,
+        7
+      ]
+    },
+    "input": "examples/input-random-20",
+    "version": "version_a",
+    "planning_radius": 8,
+    "baseline_job_id": 27,
+    "baseline_coverage": 83.33333333333333,
+    "suite_kind": "new_anchor_followup"
+  },
+  {
+    "id": 24,
+    "case_id": "follow-27",
+    "dataset": "input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        9,
+        9
+      ],
+      "2": [
+        10,
+        7
+      ]
+    },
+    "input": "examples/input-random-20",
+    "version": "version_b1",
+    "planning_radius": 8,
+    "baseline_job_id": 27,
+    "baseline_coverage": 83.33333333333333,
+    "suite_kind": "new_anchor_followup"
+  }
+]
