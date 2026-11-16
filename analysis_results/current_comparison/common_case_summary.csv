@@ -1,0 +1,5 @@
+method,runs,full_coverage,mean_coverage,screen_pass,median_wall_s,conflict_runs,fallback_runs
+B1,22,22,100.0,22,116.62810450450002,0,0
+Current A,22,16,92.42424242424242,13,34.15104967700006,0,6
+Previous capped A,22,15,91.66666666666667,12,29.424427205500024,0,6
+Previous centralized,22,22,100.0,22,84.1018851570002,0,0

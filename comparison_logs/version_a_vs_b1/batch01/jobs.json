@@ -1,0 +1,58 @@
+[
+  {
+    "id": 45,
+    "case_id": 23,
+    "dataset": "input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 14,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        5,
+        16
+      ],
+      "2": [
+        7,
+        8
+      ],
+      "3": [
+        13,
+        5
+      ]
+    },
+    "previous_A_job_id": 204,
+    "previous_A_variant": "T14",
+    "input": "examples/input-random-30",
+    "version": "version_a"
+  },
+  {
+    "id": 46,
+    "case_id": 23,
+    "dataset": "input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 14,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        5,
+        16
+      ],
+      "2": [
+        7,
+        8
+      ],
+      "3": [
+        13,
+        5
+      ]
+    },
+    "previous_A_job_id": 204,
+    "previous_A_variant": "T14",
+    "input": "examples/input-random-30",
+    "version": "version_b1"
+  }
+]

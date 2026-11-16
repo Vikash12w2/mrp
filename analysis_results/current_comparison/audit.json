@@ -1,0 +1,11 @@
+{
+  "current_results": 63,
+  "matched_current_pairs": 31,
+  "missing_job_ids": [
+    14
+  ],
+  "csv_json_discrepancies": 0,
+  "historical_comparable_results": 54,
+  "common_four_method_cases": 22,
+  "max_checked_joint_period": 1680
+}

@@ -1,0 +1,5 @@
+left,right,matched,screen_left,screen_right,mean_coverage_left,mean_coverage_right,coverage_gains,median_time_right_over_left,both_screen,mean_hard_right_minus_left,mean_soft_right_minus_left,median_time_right_over_left_screen,right_faster_screen,right_hard_better_screen,right_hard_equal_screen,mean_cost_right_minus_left
+Current A,B1,31,17,31,92.47311827956989,100.0,9,3.411521455423451,17,-6.913741396303771,-8.941723459956856,2.4012650585466297,3,2,3,23.705882352941178
+Previous capped A,Current A,32,16,18,91.66666666666666,92.70833333333333,2,1.0962630662780501,16,0.0,0.0,1.1258580026365235,2,0,16,0.0
+Previous centralized,Current A,22,22,13,100.0,92.42424242424242,0,0.401686839881772,13,7.706377960902846,10.072424014731705,0.37779998384601166,11,9,2,-26.923076923076923
+Previous centralized,B1,22,22,22,100.0,100.0,0,0.9447669505675396,22,-1.6392821347758386,-1.9919272760870192,0.9447669505675396,12,1,9,6.0

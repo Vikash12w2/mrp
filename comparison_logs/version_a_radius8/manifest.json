@@ -1,0 +1,281 @@
+{
+  "selection": "completed current Version A outputs with coverage below 100%",
+  "source": "mrp_backup/version_a_vs_b1",
+  "planning_radius": 8,
+  "baseline_radius": 6,
+  "jobs": [
+    {
+      "id": 27,
+      "case_id": 14,
+      "dataset": "input-random-20",
+      "workers": 6,
+      "rechargers": 2,
+      "T": 8,
+      "grid_side": 19,
+      "tiles": 1,
+      "anchors": {
+        "1": [
+          6,
+          7
+        ],
+        "2": [
+          13,
+          12
+        ]
+      },
+      "previous_A_job_id": 37,
+      "previous_A_variant": "base",
+      "input": "examples/input-random-20",
+      "version": "version_a",
+      "planning_radius": 8,
+      "baseline_job_id": 27,
+      "baseline_coverage": 83.33333333333333,
+      "baseline_wall_s": 33.9941454100001
+    },
+    {
+      "id": 41,
+      "case_id": 21,
+      "dataset": "input-random-30",
+      "workers": 6,
+      "rechargers": 2,
+      "T": 8,
+      "grid_side": 19,
+      "tiles": 1,
+      "anchors": {
+        "1": [
+          5,
+          16
+        ],
+        "2": [
+          7,
+          8
+        ]
+      },
+      "previous_A_job_id": 45,
+      "previous_A_variant": "base",
+      "input": "examples/input-random-30",
+      "version": "version_a",
+      "planning_radius": 8,
+      "baseline_job_id": 41,
+      "baseline_coverage": 66.66666666666667,
+      "baseline_wall_s": 75.74624433200006
+    },
+    {
+      "id": 43,
+      "case_id": 22,
+      "dataset": "input-random-30",
+      "workers": 6,
+      "rechargers": 3,
+      "T": 8,
+      "grid_side": 19,
+      "tiles": 1,
+      "anchors": {
+        "1": [
+          5,
+          16
+        ],
+        "2": [
+          7,
+          8
+        ],
+        "3": [
+          13,
+          5
+        ]
+      },
+      "previous_A_job_id": 49,
+      "previous_A_variant": "base",
+      "input": "examples/input-random-30",
+      "version": "version_a",
+      "planning_radius": 8,
+      "baseline_job_id": 43,
+      "baseline_coverage": 83.33333333333333,
+      "baseline_wall_s": 84.62302408899995
+    },
+    {
+      "id": 45,
+      "case_id": 23,
+      "dataset": "input-random-30",
+      "workers": 6,
+      "rechargers": 3,
+      "T": 14,
+      "grid_side": 19,
+      "tiles": 1,
+      "anchors": {
+        "1": [
+          5,
+          16
+        ],
+        "2": [
+          7,
+          8
+        ],
+        "3": [
+          13,
+          5
+        ]
+      },
+      "previous_A_job_id": 204,
+      "previous_A_variant": "T14",
+      "input": "examples/input-random-30",
+      "version": "version_a",
+      "planning_radius": 8,
+      "baseline_job_id": 45,
+      "baseline_coverage": 83.33333333333333,
+      "baseline_wall_s": 3190.9775821089997
+    },
+    {
+      "id": 49,
+      "case_id": 25,
+      "dataset": "input-warehouse",
+      "workers": 2,
+      "rechargers": 1,
+      "T": 8,
+      "grid_side": 19,
+      "tiles": 1,
+      "anchors": {
+        "1": [
+          7,
+          2
+        ]
+      },
+      "previous_A_job_id": 217,
+      "previous_A_variant": "cost_off_small",
+      "input": "examples/input-warehouse",
+      "version": "version_a",
+      "planning_radius": 8,
+      "baseline_job_id": 49,
+      "baseline_coverage": 50.0,
+      "baseline_wall_s": 8.202476903999923
+    },
+    {
+      "id": 57,
+      "case_id": 29,
+      "dataset": "input-warehouse",
+      "workers": 6,
+      "rechargers": 2,
+      "T": 8,
+      "grid_side": 19,
+      "tiles": 1,
+      "anchors": {
+        "1": [
+          4,
+          6
+        ],
+        "2": [
+          14,
+          6
+        ]
+      },
+      "previous_A_job_id": 53,
+      "previous_A_variant": "base",
+      "input": "examples/input-warehouse",
+      "version": "version_a",
+      "planning_radius": 8,
+      "baseline_job_id": 57,
+      "baseline_coverage": 66.66666666666667,
+      "baseline_wall_s": 34.30795394400002
+    },
+    {
+      "id": 59,
+      "case_id": 30,
+      "dataset": "input-warehouse",
+      "workers": 6,
+      "rechargers": 2,
+      "T": 14,
+      "grid_side": 19,
+      "tiles": 1,
+      "anchors": {
+        "1": [
+          4,
+          6
+        ],
+        "2": [
+          14,
+          6
+        ]
+      },
+      "previous_A_job_id": 194,
+      "previous_A_variant": "T14",
+      "input": "examples/input-warehouse",
+      "version": "version_a",
+      "planning_radius": 8,
+      "baseline_job_id": 59,
+      "baseline_coverage": 66.66666666666667,
+      "baseline_wall_s": 66.95287961999566
+    },
+    {
+      "id": 61,
+      "case_id": 31,
+      "dataset": "input-warehouse",
+      "workers": 6,
+      "rechargers": 3,
+      "T": 8,
+      "grid_side": 19,
+      "tiles": 1,
+      "anchors": {
+        "1": [
+          4,
+          6
+        ],
+        "2": [
+          4,
+          12
+        ],
+        "3": [
+          14,
+          6
+        ]
+      },
+      "previous_A_job_id": 57,
+      "previous_A_variant": "base",
+      "input": "examples/input-warehouse",
+      "version": "version_a",
+      "planning_radius": 8,
+      "baseline_job_id": 61,
+      "baseline_coverage": 83.33333333333333,
+      "baseline_wall_s": 77.00315046500009
+    },
+    {
+      "id": 63,
+      "case_id": 32,
+      "dataset": "input-warehouse",
+      "workers": 6,
+      "rechargers": 3,
+      "T": 14,
+      "grid_side": 19,
+      "tiles": 1,
+      "anchors": {
+        "1": [
+          4,
+          6
+        ],
+        "2": [
+          4,
+          12
+        ],
+        "3": [
+          14,
+          6
+        ]
+      },
+      "previous_A_job_id": 195,
+      "previous_A_variant": "T14",
+      "input": "examples/input-warehouse",
+      "version": "version_a",
+      "planning_radius": 8,
+      "baseline_job_id": 63,
+      "baseline_coverage": 83.33333333333333,
+      "baseline_wall_s": 393.48803272699996
+    }
+  ],
+  "batch_count": 6,
+  "baseline_batch_load_seconds": [
+    3190.9775821089997,
+    393.48803272699996,
+    84.62302408899995,
+    85.20562736900001,
+    109.74038974200016,
+    101.26083356399567
+  ]
+}

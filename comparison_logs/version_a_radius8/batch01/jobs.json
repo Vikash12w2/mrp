@@ -1,0 +1,34 @@
+[
+  {
+    "id": 45,
+    "case_id": 23,
+    "dataset": "input-random-30",
+    "workers": 6,
+    "rechargers": 3,
+    "T": 14,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        5,
+        16
+      ],
+      "2": [
+        7,
+        8
+      ],
+      "3": [
+        13,
+        5
+      ]
+    },
+    "previous_A_job_id": 204,
+    "previous_A_variant": "T14",
+    "input": "examples/input-random-30",
+    "version": "version_a",
+    "planning_radius": 8,
+    "baseline_job_id": 45,
+    "baseline_coverage": 83.33333333333333,
+    "baseline_wall_s": 3190.9775821089997
+  }
+]

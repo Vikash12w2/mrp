@@ -1,0 +1,15 @@
+job_id,case_id,dataset,grid,workers,rechargers,T,status,coverage,fallback_count,conflicts,deployment,source
+27,14,input-random-20,19x19,6,2,8,PARTIAL,83.33333333333333,0,0,READY,mrp_backup\version_a_vs_b1\batch01\0027.result.json
+45,23,input-random-30,19x19,6,3,14,PARTIAL,83.33333333333333,2,85,READY,mrp_backup\version_a_vs_b1\batch01\0045.result.json
+61,31,input-warehouse,19x19,6,3,8,PARTIAL,83.33333333333333,1,0,READY,mrp_backup\version_a_vs_b1\batch01\0061.result.json
+25,13,input-random-20,19x19,3,2,14,SAT,100.0,1,0,READY,mrp_backup\version_a_vs_b1\batch02\0025.result.json
+37,19,input-random-30,19x19,3,2,8,SAT,100.0,1,0,READY,mrp_backup\version_a_vs_b1\batch02\0037.result.json
+49,25,input-warehouse,19x19,2,1,8,PARTIAL,50.0,0,0,READY,mrp_backup\version_a_vs_b1\batch03\0049.result.json
+39,20,input-random-30,19x19,3,2,14,SAT,100.0,1,0,READY,mrp_backup\version_a_vs_b1\batch04\0039.result.json
+53,27,input-warehouse,25x25,3,2,8,SAT,100.0,1,0,READY,mrp_backup\version_a_vs_b1\batch04\0053.result.json
+41,21,input-random-30,19x19,6,2,8,PARTIAL,66.66666666666667,1,0,READY,mrp_backup\version_a_vs_b1\batch05\0041.result.json
+43,22,input-random-30,19x19,6,3,8,PARTIAL,83.33333333333333,2,0,READY,mrp_backup\version_a_vs_b1\batch05\0043.result.json
+51,26,input-warehouse,19x19,3,2,8,SAT,100.0,1,0,READY,mrp_backup\version_a_vs_b1\batch05\0051.result.json
+57,29,input-warehouse,19x19,6,2,8,PARTIAL,66.66666666666667,0,0,READY,mrp_backup\version_a_vs_b1\batch05\0057.result.json
+63,32,input-warehouse,19x19,6,3,14,PARTIAL,83.33333333333333,0,0,READY,mrp_backup\version_a_vs_b1\batch05\0063.result.json
+59,30,input-warehouse,19x19,6,2,14,PARTIAL,66.66666666666667,0,0,READY,mrp_backup\version_a_vs_b1\batch06\0059.result.json

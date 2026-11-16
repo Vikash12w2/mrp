@@ -1,0 +1,9 @@
+dataset,method,runs,mean_coverage,screen_pass,median_wall_s
+input-artfloor,B1,8,100.0,8,179.952501947
+input-artfloor,Current A,9,100.0,9,71.71848542099997
+input-random-20,B1,7,100.0,7,115.97175642499997
+input-random-20,Current A,7,97.61904761904762,5,40.26023613399593
+input-random-30,B1,7,100.0,7,454.56491465799945
+input-random-30,Current A,7,90.47619047619048,2,75.74624433200006
+input-warehouse,B1,9,100.0,9,404.099184528
+input-warehouse,Current A,9,83.33333333333333,2,51.483731330999944

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 39,
+    "case_id": 20,
+    "dataset": "input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 14,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        0,
+        15
+      ],
+      "2": [
+        7,
+        8
+      ]
+    },
+    "previous_A_job_id": 202,
+    "previous_A_variant": "T14",
+    "input": "examples/input-random-30",
+    "version": "version_a"
+  },
+  {
+    "id": 40,
+    "case_id": 20,
+    "dataset": "input-random-30",
+    "workers": 3,
+    "rechargers": 2,
+    "T": 14,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        0,
+        15
+      ],
+      "2": [
+        7,
+        8
+      ]
+    },
+    "previous_A_job_id": 202,
+    "previous_A_variant": "T14",
+    "input": "examples/input-random-30",
+    "version": "version_b1"
+  }
+]

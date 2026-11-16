@@ -1,0 +1,58 @@
+[
+  {
+    "id": 41,
+    "case_id": 21,
+    "dataset": "input-random-30",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        5,
+        16
+      ],
+      "2": [
+        7,
+        8
+      ]
+    },
+    "previous_A_job_id": 45,
+    "previous_A_variant": "base",
+    "input": "examples/input-random-30",
+    "version": "version_a",
+    "planning_radius": 8,
+    "baseline_job_id": 41,
+    "baseline_coverage": 66.66666666666667,
+    "baseline_wall_s": 75.74624433200006
+  },
+  {
+    "id": 27,
+    "case_id": 14,
+    "dataset": "input-random-20",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        6,
+        7
+      ],
+      "2": [
+        13,
+        12
+      ]
+    },
+    "previous_A_job_id": 37,
+    "previous_A_variant": "base",
+    "input": "examples/input-random-20",
+    "version": "version_a",
+    "planning_radius": 8,
+    "baseline_job_id": 27,
+    "baseline_coverage": 83.33333333333333,
+    "baseline_wall_s": 33.9941454100001
+  }
+]

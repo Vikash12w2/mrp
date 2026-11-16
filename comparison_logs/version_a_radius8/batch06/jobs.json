@@ -1,0 +1,58 @@
+[
+  {
+    "id": 59,
+    "case_id": 30,
+    "dataset": "input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 14,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        4,
+        6
+      ],
+      "2": [
+        14,
+        6
+      ]
+    },
+    "previous_A_job_id": 194,
+    "previous_A_variant": "T14",
+    "input": "examples/input-warehouse",
+    "version": "version_a",
+    "planning_radius": 8,
+    "baseline_job_id": 59,
+    "baseline_coverage": 66.66666666666667,
+    "baseline_wall_s": 66.95287961999566
+  },
+  {
+    "id": 57,
+    "case_id": 29,
+    "dataset": "input-warehouse",
+    "workers": 6,
+    "rechargers": 2,
+    "T": 8,
+    "grid_side": 19,
+    "tiles": 1,
+    "anchors": {
+      "1": [
+        4,
+        6
+      ],
+      "2": [
+        14,
+        6
+      ]
+    },
+    "previous_A_job_id": 53,
+    "previous_A_variant": "base",
+    "input": "examples/input-warehouse",
+    "version": "version_a",
+    "planning_radius": 8,
+    "baseline_job_id": 57,
+    "baseline_coverage": 66.66666666666667,
+    "baseline_wall_s": 34.30795394400002
+  }
+]

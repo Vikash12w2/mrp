@@ -1,0 +1,5 @@
+method,runs,mean_coverage,screen_pass
+B1,20,100.0,20
+Current A,20,91.66666666666666,12
+Previous capped A,20,90.83333333333334,11
+Previous centralized,20,100.0,20
