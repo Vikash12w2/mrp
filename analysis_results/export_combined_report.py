@@ -1,14 +1,35 @@
 """Create a PDF of the combined report; no HTML artifact is generated."""
 from pathlib import Path
+import re
+from io import BytesIO
 import pymupdf as fitz
 from markdown_it import MarkdownIt
+from matplotlib.mathtext import math_to_image
+from matplotlib.font_manager import FontProperties
 
 OUT = Path(__file__).resolve().parent / 'combined_report'
 
 
 def main():
-    body = MarkdownIt('commonmark').enable('table').render(
-        (OUT / 'COMBINED_REPORT.md').read_text(encoding='utf-8'))
+    source = (OUT / 'COMBINED_REPORT.md').read_text(encoding='utf-8')
+    equation_dir = OUT / 'equations'
+    equation_dir.mkdir(exist_ok=True)
+    equation_count = 0
+    def equation(match):
+        nonlocal equation_count
+        equation_count += 1
+        expression = ' '.join(match.group(1).split()).replace(r'\ne\mathrm', r'\neq\mathrm')
+        buffer = BytesIO()
+        math_to_image('$' + expression + '$', buffer,
+                      prop=FontProperties(size=12), dpi=200, format='png', color='black')
+        data = buffer.getvalue()
+        path = equation_dir / f'equation_{equation_count:02d}.png'
+        path.write_bytes(data)
+        pix = fitz.Pixmap(data)
+        width = min(pix.width * 72 / 200, 510)
+        return f'\n<p><img src="combined_report/equations/{path.name}" style="width:{width:.1f}pt"></p>\n'
+    source = re.sub(r'\$\$\s*(.*?)\s*\$\$', equation, source, flags=re.S)
+    body = MarkdownIt('commonmark').enable('table').render(source)
     for tag in ('thead', 'tbody'):
         body = body.replace(f'<{tag}>', '').replace(f'</{tag}>', '')
     body = body.replace('<th>', '<td><b>').replace('</th>', '</b></td>')
