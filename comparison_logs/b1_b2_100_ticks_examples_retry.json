@@ -1,0 +1,368 @@
+{
+  "case": "examples",
+  "operating_ticks": 100,
+  "anchors": {
+    "1": [
+      9,
+      5
+    ],
+    "2": [
+      18,
+      18
+    ]
+  },
+  "b1_resource_limit": 150000000,
+  "b1": {
+    "version": "B1",
+    "method": "G2/Z3",
+    "scope": "global",
+    "grouping_status": "OPTIMAL",
+    "grouping_scope": "global",
+    "planning_scope": "group_specific_regions",
+    "grouping_reason": "",
+    "grouping_seconds": 0.2546002999988559,
+    "seconds": 89.2859202999989,
+    "groups": {
+      "1": [
+        1,
+        4
+      ],
+      "2": [
+        2,
+        3
+      ]
+    },
+    "unassigned": {},
+    "objectives": {
+      "assigned": 4,
+      "policy": "coverage, recovery locality, peak service, battery-weighted workload, spatial cohesion, balance",
+      "peak_service": "487/24",
+      "spatial_cost": "71/4",
+      "workload_gap": "2/5",
+      "count_square": 8,
+      "demand_loads": {
+        "1": 0.36666666666666664,
+        "2": 0.36666666666666664
+      },
+      "distance": 15.166666666666666
+    },
+    "planning_status": "UNKNOWN",
+    "executable": false,
+    "retry_status": "PLANNING_UNKNOWN",
+    "attempts": [
+      {
+        "attempt": 1,
+        "groups": {
+          "1": [
+            1,
+            4
+          ],
+          "2": [
+            2,
+            3
+          ]
+        },
+        "grouping_status": "OPTIMAL",
+        "grouping_seconds": 0.2546002999988559,
+        "planning_status": "UNKNOWN",
+        "executable": false,
+        "plans": {
+          "1": {
+            "workers": [
+              1,
+              4
+            ],
+            "status": "UNKNOWN",
+            "planning_box": [
+              0,
+              11,
+              0,
+              13
+            ],
+            "region_attempts": [
+              {
+                "expansion": 0,
+                "boxes": {
+                  "1": [
+                    0,
+                    11,
+                    0,
+                    13
+                  ],
+                  "2": [
+                    9,
+                    18,
+                    0,
+                    18
+                  ]
+                },
+                "valid": false,
+                "statuses": {
+                  "1": "UNKNOWN",
+                  "2": "DEPENDENCY_BLOCKED"
+                },
+                "cycle_attempt": 0,
+                "forced_cycles": {}
+              }
+            ],
+            "T": 20,
+            "M": 0,
+            "phase1_wait": 0,
+            "completion_steps": null,
+            "hard_eff": null,
+            "soft_eff": null,
+            "fallback": false,
+            "notes": [
+              "phase 1 inconclusive: canceled"
+            ],
+            "seconds": 88.99948030000087
+          },
+          "2": {
+            "workers": [
+              2,
+              3
+            ],
+            "status": "DEPENDENCY_BLOCKED",
+            "planning_box": [
+              9,
+              18,
+              0,
+              18
+            ],
+            "region_attempts": [
+              {
+                "expansion": 0,
+                "boxes": {
+                  "1": [
+                    0,
+                    11,
+                    0,
+                    13
+                  ],
+                  "2": [
+                    9,
+                    18,
+                    0,
+                    18
+                  ]
+                },
+                "valid": false,
+                "statuses": {
+                  "1": "UNKNOWN",
+                  "2": "DEPENDENCY_BLOCKED"
+                },
+                "cycle_attempt": 0,
+                "forced_cycles": {}
+              }
+            ],
+            "T": 0,
+            "M": 0,
+            "phase1_wait": 0,
+            "completion_steps": null,
+            "hard_eff": null,
+            "soft_eff": null,
+            "fallback": false,
+            "notes": [
+              "higher-priority group has no valid plan"
+            ],
+            "seconds": 0.0
+          }
+        },
+        "conflicts": [],
+        "full_joint_period_checked": true,
+        "deployment_status": "BLOCKED"
+      }
+    ],
+    "metrics": {
+      "hard_eff": null,
+      "soft_eff": null,
+      "served_hard_eff": 0.0,
+      "served_soft_eff": 0.0,
+      "coverage": 0.0,
+      "served": 0,
+      "Ms": [],
+      "sum_time": 88.99948030000087,
+      "critical_path_time": 88.99948030000087,
+      "same_group_conflicts": 0,
+      "cross_group_conflicts": 0,
+      "fallback_groups": [],
+      "deployment_ready": false,
+      "deployment_status": "BLOCKED",
+      "deployment_steps": null,
+      "unclaimed": {}
+    },
+    "anchors": {
+      "1": [
+        9,
+        5
+      ],
+      "2": [
+        18,
+        18
+      ]
+    },
+    "conflicts": [],
+    "full_joint_period_checked": true,
+    "plans": {
+      "1": {
+        "workers": [
+          1,
+          4
+        ],
+        "status": "UNKNOWN",
+        "planning_box": [
+          0,
+          11,
+          0,
+          13
+        ],
+        "region_attempts": [
+          {
+            "expansion": 0,
+            "boxes": {
+              "1": [
+                0,
+                11,
+                0,
+                13
+              ],
+              "2": [
+                9,
+                18,
+                0,
+                18
+              ]
+            },
+            "valid": false,
+            "statuses": {
+              "1": "UNKNOWN",
+              "2": "DEPENDENCY_BLOCKED"
+            },
+            "cycle_attempt": 0,
+            "forced_cycles": {}
+          }
+        ],
+        "T": 20,
+        "M": 0,
+        "phase1_wait": 0,
+        "completion_steps": null,
+        "hard_eff": null,
+        "soft_eff": null,
+        "fallback": false,
+        "notes": [
+          "phase 1 inconclusive: canceled"
+        ],
+        "seconds": 88.99948030000087
+      },
+      "2": {
+        "workers": [
+          2,
+          3
+        ],
+        "status": "DEPENDENCY_BLOCKED",
+        "planning_box": [
+          9,
+          18,
+          0,
+          18
+        ],
+        "region_attempts": [
+          {
+            "expansion": 0,
+            "boxes": {
+              "1": [
+                0,
+                11,
+                0,
+                13
+              ],
+              "2": [
+                9,
+                18,
+                0,
+                18
+              ]
+            },
+            "valid": false,
+            "statuses": {
+              "1": "UNKNOWN",
+              "2": "DEPENDENCY_BLOCKED"
+            },
+            "cycle_attempt": 0,
+            "forced_cycles": {}
+          }
+        ],
+        "T": 0,
+        "M": 0,
+        "phase1_wait": 0,
+        "completion_steps": null,
+        "hard_eff": null,
+        "soft_eff": null,
+        "fallback": false,
+        "notes": [
+          "higher-priority group has no valid plan"
+        ],
+        "seconds": 0.0
+      }
+    }
+  },
+  "b1_operating_totals": {},
+  "b2": {
+    "grouping_status": "OPTIMAL",
+    "groups": {
+      "1": [
+        1,
+        4
+      ],
+      "2": [
+        2,
+        3
+      ]
+    },
+    "unassigned": {},
+    "ticks": 100,
+    "workers": {
+      "1": {
+        "moving": 81,
+        "waiting": 0,
+        "charging": 19,
+        "energy_received": 154
+      },
+      "2": {
+        "moving": 82,
+        "waiting": 0,
+        "charging": 18,
+        "energy_received": 135
+      },
+      "3": {
+        "moving": 81,
+        "waiting": 0,
+        "charging": 19,
+        "energy_received": 156
+      },
+      "4": {
+        "moving": 81,
+        "waiting": 0,
+        "charging": 19,
+        "energy_received": 135
+      }
+    },
+    "final_charge": {
+      "1": 12,
+      "2": 18,
+      "3": 14,
+      "4": 20
+    },
+    "travel_steps": {
+      "1": 48,
+      "2": 51
+    }
+  },
+  "b2_operating_totals": {
+    "moving": 325,
+    "waiting": 0,
+    "charging": 75,
+    "travel": 99
+  },
+  "b2_seconds": 2.8467333000007784
+}

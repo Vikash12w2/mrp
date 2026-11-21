@@ -1,0 +1,452 @@
+{
+  "case": "demo",
+  "operating_ticks": 100,
+  "anchors": {
+    "1": [
+      0,
+      0
+    ],
+    "2": [
+      7,
+      0
+    ]
+  },
+  "b1_resource_limit": 0,
+  "b1": {
+    "version": "B1",
+    "method": "G2/Z3",
+    "scope": "global",
+    "grouping_status": "OPTIMAL",
+    "grouping_scope": "global",
+    "planning_scope": "group_specific_regions",
+    "grouping_reason": "",
+    "grouping_seconds": 0.025323800000478514,
+    "seconds": 10.339906600000177,
+    "groups": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ]
+    },
+    "unassigned": {},
+    "objectives": {
+      "assigned": 2,
+      "policy": "coverage, recovery locality, peak service, battery-weighted workload, spatial cohesion, balance",
+      "peak_service": "6",
+      "spatial_cost": "2",
+      "workload_gap": "0",
+      "count_square": 2,
+      "demand_loads": {
+        "1": 0.5,
+        "2": 0.5
+      },
+      "distance": 2.0
+    },
+    "planning_status": "SAT",
+    "executable": true,
+    "retry_status": "SUCCESS",
+    "attempts": [
+      {
+        "attempt": 1,
+        "groups": {
+          "1": [
+            1
+          ],
+          "2": [
+            2
+          ]
+        },
+        "grouping_status": "OPTIMAL",
+        "grouping_seconds": 0.025323800000478514,
+        "planning_status": "SAT",
+        "executable": true,
+        "plans": {
+          "1": {
+            "workers": [
+              1
+            ],
+            "status": "SAT",
+            "planning_box": [
+              0,
+              4,
+              0,
+              4
+            ],
+            "region_attempts": [
+              {
+                "expansion": 0,
+                "boxes": {
+                  "1": [
+                    0,
+                    4,
+                    0,
+                    4
+                  ],
+                  "2": [
+                    3,
+                    7,
+                    0,
+                    4
+                  ]
+                },
+                "valid": false,
+                "statuses": {
+                  "1": "SAT",
+                  "2": "UNSAT"
+                },
+                "cycle_attempt": 0,
+                "forced_cycles": {}
+              },
+              {
+                "expansion": 0,
+                "boxes": {
+                  "1": [
+                    0,
+                    4,
+                    0,
+                    4
+                  ],
+                  "2": [
+                    3,
+                    7,
+                    0,
+                    4
+                  ]
+                },
+                "valid": true,
+                "statuses": {
+                  "1": "SAT",
+                  "2": "SAT"
+                },
+                "cycle_attempt": 1,
+                "forced_cycles": {
+                  "1": 12,
+                  "2": 12
+                }
+              }
+            ],
+            "T": 8,
+            "M": 12,
+            "phase1_wait": 3,
+            "completion_steps": 4,
+            "hard_eff": 41.666666666666664,
+            "soft_eff": 58.333333333333336,
+            "fallback": false,
+            "notes": [],
+            "seconds": 4.2169080000003305
+          },
+          "2": {
+            "workers": [
+              2
+            ],
+            "status": "SAT",
+            "planning_box": [
+              3,
+              7,
+              0,
+              4
+            ],
+            "region_attempts": [
+              {
+                "expansion": 0,
+                "boxes": {
+                  "1": [
+                    0,
+                    4,
+                    0,
+                    4
+                  ],
+                  "2": [
+                    3,
+                    7,
+                    0,
+                    4
+                  ]
+                },
+                "valid": false,
+                "statuses": {
+                  "1": "SAT",
+                  "2": "UNSAT"
+                },
+                "cycle_attempt": 0,
+                "forced_cycles": {}
+              },
+              {
+                "expansion": 0,
+                "boxes": {
+                  "1": [
+                    0,
+                    4,
+                    0,
+                    4
+                  ],
+                  "2": [
+                    3,
+                    7,
+                    0,
+                    4
+                  ]
+                },
+                "valid": true,
+                "statuses": {
+                  "1": "SAT",
+                  "2": "SAT"
+                },
+                "cycle_attempt": 1,
+                "forced_cycles": {
+                  "1": 12,
+                  "2": 12
+                }
+              }
+            ],
+            "T": 8,
+            "M": 12,
+            "phase1_wait": 3,
+            "completion_steps": 4,
+            "hard_eff": 41.666666666666664,
+            "soft_eff": 58.333333333333336,
+            "fallback": false,
+            "notes": [],
+            "seconds": 6.081878799999686
+          }
+        },
+        "conflicts": [],
+        "full_joint_period_checked": true,
+        "deployment_status": "READY"
+      }
+    ],
+    "metrics": {
+      "hard_eff": 41.666666666666664,
+      "soft_eff": 58.333333333333336,
+      "served_hard_eff": 41.666666666666664,
+      "served_soft_eff": 58.333333333333336,
+      "coverage": 100.0,
+      "served": 2,
+      "Ms": [
+        12,
+        12
+      ],
+      "sum_time": 10.298786800000016,
+      "critical_path_time": 10.298786800000016,
+      "same_group_conflicts": 0,
+      "cross_group_conflicts": 0,
+      "fallback_groups": [],
+      "deployment_ready": true,
+      "deployment_status": "READY",
+      "deployment_steps": 5,
+      "unclaimed": {}
+    },
+    "anchors": {
+      "1": [
+        0,
+        0
+      ],
+      "2": [
+        7,
+        0
+      ]
+    },
+    "conflicts": [],
+    "full_joint_period_checked": true,
+    "plans": {
+      "1": {
+        "workers": [
+          1
+        ],
+        "status": "SAT",
+        "planning_box": [
+          0,
+          4,
+          0,
+          4
+        ],
+        "region_attempts": [
+          {
+            "expansion": 0,
+            "boxes": {
+              "1": [
+                0,
+                4,
+                0,
+                4
+              ],
+              "2": [
+                3,
+                7,
+                0,
+                4
+              ]
+            },
+            "valid": false,
+            "statuses": {
+              "1": "SAT",
+              "2": "UNSAT"
+            },
+            "cycle_attempt": 0,
+            "forced_cycles": {}
+          },
+          {
+            "expansion": 0,
+            "boxes": {
+              "1": [
+                0,
+                4,
+                0,
+                4
+              ],
+              "2": [
+                3,
+                7,
+                0,
+                4
+              ]
+            },
+            "valid": true,
+            "statuses": {
+              "1": "SAT",
+              "2": "SAT"
+            },
+            "cycle_attempt": 1,
+            "forced_cycles": {
+              "1": 12,
+              "2": 12
+            }
+          }
+        ],
+        "T": 8,
+        "M": 12,
+        "phase1_wait": 3,
+        "completion_steps": 4,
+        "hard_eff": 41.666666666666664,
+        "soft_eff": 58.333333333333336,
+        "fallback": false,
+        "notes": [],
+        "seconds": 4.2169080000003305
+      },
+      "2": {
+        "workers": [
+          2
+        ],
+        "status": "SAT",
+        "planning_box": [
+          3,
+          7,
+          0,
+          4
+        ],
+        "region_attempts": [
+          {
+            "expansion": 0,
+            "boxes": {
+              "1": [
+                0,
+                4,
+                0,
+                4
+              ],
+              "2": [
+                3,
+                7,
+                0,
+                4
+              ]
+            },
+            "valid": false,
+            "statuses": {
+              "1": "SAT",
+              "2": "UNSAT"
+            },
+            "cycle_attempt": 0,
+            "forced_cycles": {}
+          },
+          {
+            "expansion": 0,
+            "boxes": {
+              "1": [
+                0,
+                4,
+                0,
+                4
+              ],
+              "2": [
+                3,
+                7,
+                0,
+                4
+              ]
+            },
+            "valid": true,
+            "statuses": {
+              "1": "SAT",
+              "2": "SAT"
+            },
+            "cycle_attempt": 1,
+            "forced_cycles": {
+              "1": 12,
+              "2": 12
+            }
+          }
+        ],
+        "T": 8,
+        "M": 12,
+        "phase1_wait": 3,
+        "completion_steps": 4,
+        "hard_eff": 41.666666666666664,
+        "soft_eff": 58.333333333333336,
+        "fallback": false,
+        "notes": [],
+        "seconds": 6.081878799999686
+      }
+    }
+  },
+  "b1_operating_totals": {
+    "moving": 74,
+    "travel": 109,
+    "charging": 36,
+    "waiting": 90
+  },
+  "b2": {
+    "grouping_status": "OPTIMAL",
+    "groups": {
+      "1": [
+        1
+      ],
+      "2": [
+        2
+      ]
+    },
+    "unassigned": {},
+    "ticks": 100,
+    "workers": {
+      "1": {
+        "moving": 50,
+        "waiting": 12,
+        "charging": 38,
+        "energy_received": 50
+      },
+      "2": {
+        "moving": 51,
+        "waiting": 11,
+        "charging": 38,
+        "energy_received": 50
+      }
+    },
+    "final_charge": {
+      "1": 8,
+      "2": 7
+    },
+    "travel_steps": {
+      "1": 24,
+      "2": 23
+    }
+  },
+  "b2_operating_totals": {
+    "moving": 101,
+    "waiting": 23,
+    "charging": 76,
+    "travel": 47
+  },
+  "b2_seconds": 0.1657868000002054
+}
